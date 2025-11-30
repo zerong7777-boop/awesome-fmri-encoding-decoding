@@ -46,7 +46,6 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 
 **Semantic reconstruction of continuous language – dataset** – Data accompanying Tang et al., Nat Neurosci 2023.  [📂 Data](https://openneuro.org/datasets/ds003020)
 
-(*Feel free to add more datasets: Vim-1, BOLD5000, GOD, BOLD500K, CelebrityFace, movie-watching datasets, etc.*)
 
 ---
 
@@ -58,7 +57,6 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 
 **Brain-Inspired fMRI-to-Text Decoding via Incremental and Wrap-Up Language Modeling (CogReader)** (NeurIPS 2025 Spotlight) – NeurIPS 2025 work that mimics human segmented language comprehension; decodes long narratives with segment-wise incremental decoding and wrap-up integration.  [📄 Paper](https://openreview.net/forum?id=REIo9ZLSYo)  •  [💻 Code](https://github.com/WENXUYUN/CogReader)
 
-(*You can add more narrative / language decoding works here, e.g., character-level decoders, other fMRI-to-text or EEG-to-text models.*)
 
 ---
 
@@ -98,7 +96,6 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 
 **MoRE-Brain: Routed Mixture of Experts for Interpretable and Generalizable Cross-Subject fMRI Visual Decoding** (NeurIPS 2025 Poster) – Routed mixture-of-experts mapping fMRI to CLIP space with subject-specific routers and diffusion decoder; emphasizes interpretability of expert routing.  [📄 Paper](https://arxiv.org/abs/2505.15946)  •  [🌐 OpenReview](https://openreview.net/forum?id=fYSPRGmS6l)  •  [💻 Code](https://github.com/yuxiangwei0808/MoRE-Brain)
 
-(*Feel free to add other recent cross-subject / few-shot / foundation-model-based decoders here, such as MindEye2, BrainSD, MinD-Vis, etc.*)
 
 ---
 
@@ -108,7 +105,6 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 
 **CLSR: Decoding Complex Video and Story Stimuli from fMRI** (Nat Neurosci 2023) – Large-scale movie & story dataset with joint video / text decoding from fMRI.  [📄 Paper](https://doi.org/10.1038/s41593-023-01327-2)
 
-(*Add here movie-watching, dynamic scene and video-to-text fMRI decoders.*)
 
 ---
 
@@ -118,13 +114,11 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 
 **SynBrain: Enhancing Visual-to-fMRI Synthesis via Probabilistic Representation Learning** (NeurIPS 2025 Poster / arXiv 2025) – Probabilistic visual-to-fMRI encoder with BrainVAE and semantic-to-neural mapper; synthesized fMRI improves downstream decoding.  [📄 Paper](https://arxiv.org/abs/2508.10298)  •  [📄 PDF](https://openreview.net/pdf/3971b93a4f08a3549d29904c63d514e0df961001.pdf)
 
-(*You can add other encoding / data-augmentation works here, e.g., fMRI encoders used to generate synthetic training data for decoders.*)
 
 ---
 
 ## Audio & Music Decoding
 
-(*Reserved for fMRI-based decoding of auditory scenes, speech, and music – e.g., music genre / affect decoding, sound category decoding, auditory cortex modeling.  Contributions welcome.*)
 
 ---
 
@@ -136,13 +130,11 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 
 **Joint Modeling of fMRI and EEG Imaging Using Ordinary Differential Equation-based Hypergraph Neural Networks (FE-NET)** (NeurIPS 2025) – Jointly models asynchronous fMRI-EEG data via GAN-based hypergraph generation and Neural ODE–based temporal dynamics for multimodal brain decoding.  [📄 Paper](https://openreview.net/pdf/053f8c5a43f7051852d82cdcb8ab742f69065ea2.pdf)
 
-(*You can also list multimodal models combining fMRI with EEG, MEG, sMRI, DTI, text or audio, as well as large foundation models for brain decoding / encoding.*)
 
 ---
 
 ## Clinical / Cognitive & Mental-State Decoding
 
-(*Reserved for works that apply fMRI decoding to clinical or cognitive states – e.g., decoding emotion, disease markers, psychiatric conditions, or cognitive load.  Add your favorite papers here.*)
 
 ---
 
@@ -158,7 +150,6 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 
 **Awesome Brain Encoding & Decoding** – Another general collection of brain encoding / decoding papers.  [📦 GitHub](https://github.com/subbareddy248/Awesome-Brain-Encoding--Decoding)
 
-(*You can also list preprocessing toolboxes, fMRI loaders, visualization tools, and educational tutorials here, such as fMRIPrep, nilearn, AFNI / SPM toolchains, etc.*)
 
 ---
 
