@@ -1,5 +1,5 @@
 # Awesome fMRI Decoding (Categorized)
-A curated list of **fMRI-based brain decoding** papers and resources, focusing on **reconstructing images / videos / language / audio** from brain activity, inspired by [awesome-diffusion-categorized](https://github.com/wangkai930418/awesome-diffusion-categorized).
+A curated list of **fMRI-based brain decoding** papers and resources, focusing on **reconstructing images / videos / language / audio** from brain activity.
 
 If you find this repo helpful, please give it a ⭐ and consider contributing new papers via pull requests.
 
