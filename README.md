@@ -23,7 +23,6 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 9. [Clinical / Cognitive & Mental-State Decoding](#clinical--cognitive--mental-state-decoding)
 10. [Toolboxes, Tutorials & Awesome Lists](#toolboxes-tutorials--awesome-lists)
 11. [Contributing](#contributing)
-12. [License](#license)
 
 ---
 
