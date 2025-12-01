@@ -274,6 +274,7 @@ MoRE-Brain: Routed Mixture of Experts for Interpretable and Generalizable Cross-
 [[OpenReview](https://openreview.net/forum?id=fYSPRGmS6l)] [[arXiv](https://arxiv.org/abs/2505.15946)] [[Code](https://github.com/yuxiangwei0808/MoRE-Brain)]
 
 Inter-individual and inter-site neural code conversion without shared stimuli  
+*(A general-purpose cross-subject / cross-site alignment method that can support various decoding tasks beyond visual reconstruction.)*
 [[Nature Computational Science 2025](https://doi.org/10.1038/s43588-025-00826-5)]
 
 ---
@@ -417,6 +418,7 @@ Machine Learning for Classifying Affective Valence from fMRI: A Systematic Revie
 [[Affective Science 2025](https://link.springer.com/article/10.1007/s44163-025-00377-8)]
 
 Brain Harmony: A Multimodal Foundation Model Unifying Morphology and Function into 1D Tokens  
+*(Also serves as a multimodal foundation model that can initialize or regularize downstream decoders; see also Section [6.1 Unified Vision–Language / Multimodal Decoders](#61-unified-visionlanguage--multimodal-decoders).)*
 [[NeurIPS 2025](https://github.com/hzlab/Brain-Harmony)]
 
 
@@ -432,6 +434,7 @@ Explainable Deep-Learning Framework: Decoding Brain Task and Predicting Individu
 [[Preprint 2024](https://www.biorxiv.org/content/10.1101/2024.02.29.582682v1)]
 
 Scaling Vision Transformers for Functional MRI with Flat Maps  
+*(Provides a scalable ViT-based backbone architecture for a variety of decoding tasks, beyond a single specific paradigm.)*
 [[NeurIPS 2025 (submitted)](link_to_preprint)]
 
 
@@ -508,7 +511,8 @@ fmralign – functional alignment and inter-subject mapping
 bdpy – Brain Decoder Toolbox in Python  
 [[GitHub](https://github.com/KamitaniLab/bdpy)]
 
-NextBrain: A probabilistic histological atlas of the human brain for MRI segmentation  
+NextBrain: A probabilistic histological atlas of the human brain for MRI segmentation 
+*(Provides a high-resolution anatomical prior and segmentation backbone that can benefit fMRI decoding pipelines; see also Section [8.3 Methodological and Conceptual Perspectives on Mental-State Decoding](#83-methodological-and-conceptual-perspectives-on-mental-state-decoding).)*
 [[Nature 2025](https://doi.org/10.1038/s41586-025-09708-2)]
 
 
