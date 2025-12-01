@@ -160,7 +160,7 @@ BrainDEC: A Multimodal LLM for the Non-Invasive Decoding of Text from Brain Reco
 [[Information Fusion 2025](https://doi.org/10.1016/j.inffus.2025.103589)] [[Code](https://github.com/Hmamouche/brain_decode)]
 
 Brain-Inspired fMRI-to-Text Decoding via Incremental and Wrap-Up Language Modeling (CogReader)  
-[[NeurIPS 2025 Spotlight](https://openreview.net/forum?id=REIo9ZLSYo)] [[PDF](https://openreview.net/pdf?id=REIo9ZLSYo)] [[Code](https://anonymous.4open.science/r/CogReader-A42C/)]
+[[NeurIPS 2025 Spotlight](https://openreview.net/forum?id=REIo9ZLSYo)] [[PDF](https://openreview.net/pdf?id=REIo9ZLSYo)] [[Code](https://github.com/WENXUYUN/CogReader)]
 
 Language Reconstruction with Brain Predictive Coding from fMRI Data (PredFT)  
 [[arXiv 2024; submitted to ICLR 2025](https://arxiv.org/abs/2405.11597)]
