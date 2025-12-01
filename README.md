@@ -24,7 +24,6 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 - [8. Clinical / Cognitive and Mental-State Decoding](#8-clinical--cognitive-and-mental-state-decoding)
 - [9. Toolboxes and Awesome Lists](#9-toolboxes-and-awesome-lists)
 - [10. Contributing](#10-contributing)
-- [11. License](#11-license)
 
 ---
 
@@ -262,73 +261,190 @@ The Wisdom of a Crowd of Brains: A Universal Brain Encoder
 [[arXiv 2024](https://arxiv.org/abs/2406.12179)]
 
 SynBrain: Enhancing Visual-to-fMRI Synthesis via Probabilistic Representation Learning  
-[[arXiv 2025](https://arxiv.org/abs/2508.10298)] [[OpenReview](https://openreview.net/forum?id=ZTHYaSxqmq)]
+[[arXiv 2025](https://arxiv.org/abs/2508.10298)] [[NeurIPS 2025](https://openreview.net/forum?id=ZTHYaSxqmq)]
 
 
 ---
 
 ## 5. Video and Dynamic Scene Decoding
 
-> **Scope:** 输出是 **video / 动态帧 / 动态特征**，通常是 movie fMRI。
+> **Scope:** Methods that decode **dynamic visual experience** from brain activity: videos, continuous frames, or time-varying visual features (typically movie fMRI or other naturalistic video stimuli).
 
-Visual experience reconstruction from movie fMRI  
-[[Current Biology 2011](https://doi.org/10.1016/j.cub.2011.01.031)]
+Reconstructing visual experiences from brain activity evoked by natural movies  
+[[Current Biology 2011](https://doi.org/10.1016/j.cub.2011.01.031)] 
 
-CLSR: Decoding complex video and story stimuli from fMRI  
-[[Nature Neuroscience 2023](https://doi.org/10.1038/s41593-023-01327-2)]
+Neural encoding and decoding with deep learning for dynamic natural vision  
+[[Cerebral Cortex 2018](https://doi.org/10.1093/cercor/bhx268)]
 
-*(Add movie fMRI → video / caption / dynamic scene decoding works here.)*
+Reconstructing rapid natural vision with fMRI-conditional video generative adversarial network  
+[[Cerebral Cortex 2022](https://doi.org/10.1093/cercor/bhab498)] 
+
+Cinematic Mindscapes: High-quality Video Reconstruction from Brain Activity (Mind-Video)  
+[[NeurIPS 2023 Oral](https://proceedings.neurips.cc/paper_files/paper/2023/hash/4e5e0daf4b05d8bfc6377f33fd53a8f4-Abstract-Conference.html)] [[Project](https://www.mind-video.com/)] 
+
+NeuralFlix: Reconstructing Vivid Videos from Human Brain Activity  
+[[arXiv 2024](https://arxiv.org/abs/2402.01590)] 
+
+NeuroClips: Towards High-fidelity and Smooth fMRI-to-Video Reconstruction  
+[[NeurIPS 2024](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5c594bf6223b67109441c9e0c97542ed-Paper-Conference.pdf)] [[Code](https://github.com/gongzix/NeuroClips)] 
+
+NEURONS: Emulating the Human Visual Cortex Improves Fidelity and Interpretability in fMRI-to-Video Reconstruction  
+[[ICCV 2025](https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Neurons_Emulating_the_Human_Visual_Cortex_Improves_Fidelity_and_Interpretability_ICCV_2025_paper.html)] [[Code](https://github.com/xmed-lab/NEURONS)] 
+
 
 ---
 
 ## 6. Multimodal and Foundation-Model-based Decoding
 
-> **Scope:** 使用 CLIP / Stable Diffusion / VLM / LMM 等 **foundation models**，统一解多种模态（图像 + 文本等）的解码框架。
+> **Scope:** Decoders that make central use of **foundation models** (e.g., CLIP, Stable Diffusion, VLMs, LMMs) and/or provide **unified frameworks** to decode multiple modalities (images + text + video, etc.) from brain activity.
 
 UMBRAE: Unified Multimodal Brain Decoding  
-[[ECCV 2024](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/01133.pdf)] [[arXiv](https://arxiv.org/abs/2404.07202)] [[Project](https://weihaox.github.io/UMBRAE/)] [[Code](https://github.com/weihaox/UMBRAE)]
+[[ECCV 2024](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/01133.pdf)] [[Project](https://weihaox.github.io/UMBRAE/)] [[Code](https://github.com/weihaox/UMBRAE)] 
 
-MindReader: Reconstructing complex images from brain activities  
-[[NeurIPS 2022](https://arxiv.org/abs/2209.12951)] [[Code](https://github.com/yuvalsim/MindReader)]
+BrainCLIP: Bridging Brain and Visual-Linguistic Representation via CLIP for Generic Natural Visual Stimulus Decoding  
+[[arXiv 2023](https://arxiv.org/abs/2302.12971)] [[Code](https://github.com/YulongBonjour/BrainCLIP)]   
 
-*(More “unified multimodal” or foundation-model-centric decoders can be added here.)*
+Modality-Agnostic fMRI Decoding of Vision and Language  
+[[arXiv 2024](https://arxiv.org/abs/2403.11771)] [[Dataset: SemReps-8K](https://elifesciences.org/reviewed-preprints/107933)] 
+
+Mind2Word: Towards Generalized Visual Neural Representations for High-Quality Video Reconstruction  
+[[Expert Systems with Applications 2025](https://www.sciencedirect.com/science/article/pii/S095741742502771X)]   
+
+Decoding the Moving Mind: Multi-Subject fMRI-to-Video Retrieval with MLLM Semantic Grounding  
+[[bioRxiv 2025](https://www.biorxiv.org/content/10.1101/2025.04.07.647335v1)] 
+
+
 
 ---
 
 ## 7. Audio and Music Decoding
 
-> **Scope:** fMRI → 音频 / 音乐：音乐旋律、音色、自然声音类别、speech waveform 等。
+> **Scope:** Decoding approaches where the output is **sound** (music, speech, or other acoustic signals) from brain activity; primarily fMRI, plus a few closely related non-invasive modalities when highly influential.
 
-*(Placeholder – add music / sound decoding works here.)*
+Brain2Music: Reconstructing Music from Human Brain Activity  
+[[arXiv 2023](https://arxiv.org/abs/2307.11078)] [[Project](https://google-research.github.io/seanet/brain2music/)]
+
+Reconstructing Music Perception from Brain Activity Using a Prior-Guided Diffusion Model  
+[[Scientific Reports 2025](https://www.nature.com/articles/s41598-025-26095-w)]
+
+R&B – Rhythm and Brain: Cross-Subject Music Decoding from fMRI via Prior-Guided Diffusion Model  
+[[Preprint 2025](https://doi.org/10.21203/rs.3.rs-7301336/v1)]
+
+Music Can Be Reconstructed from Human Auditory Cortex Activity Using Nonlinear Decoding Models  
+*(invasive iEEG, but highly relevant for audio reconstruction)*  
+[[PLOS Biology 2023](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002176)]
+
+Neural Decoding of Music from the EEG  
+*(EEG with companion fMRI mapping; non-fMRI but conceptually related)*  
+[[Scientific Reports 2023](https://www.nature.com/articles/s41598-022-27361-x)]
+
+Identifying Musical Pieces from fMRI Data Using Encoding and Decoding Models  
+[[Scientific Reports 2018](https://www.nature.com/articles/s41598-018-20732-3)]
+
+Capturing the Musical Brain with LASSO: Dynamic Decoding of Musical Features from fMRI Data  
+[[NeuroImage 2014](https://doi.org/10.1016/j.neuroimage.2013.11.017)]
+
+Decoding Reveals the Neural Representation of Perceived and Imagined Musical Sounds  
+*(MEG; key for music imagination decoding)*  
+[[PLOS Biology 2024](https://doi.org/10.1371/journal.pbio.3002858)]
 
 ---
 
 ## 8. Clinical / Cognitive and Mental-State Decoding
 
-> **Scope:** fMRI 解码用于 emotion / cognitive load / disease marker / mental state 等临床或认知应用。
+> **Scope:** fMRI-based decoding of **emotion, cognition, and clinically relevant mental states** (e.g., affective valence, attention, spontaneous thought, disease markers), including works that position decoding as a step toward biomarkers or neurofeedback / intervention.
 
-*(Placeholder – add clinical / cognitive decoding works here.)*
+Brain Decoding of Spontaneous Thought: Predictive Modeling of Self-Relevance and Valence Using Personal Narratives  
+[[PNAS 2024](https://www.pnas.org/doi/10.1073/pnas.2401959121)]
+
+Benchmarking Explanation Methods for Mental State Decoding with Deep Learning Models  
+[[NeuroImage 2023](https://doi.org/10.1016/j.neuroimage.2023.120109)] [[Code](https://github.com/athms/xai-brain-decoding-benchmark)]
+
+BrainCodec: Neural fMRI Codec for the Decoding of Cognitive Brain States  
+[[arXiv 2024](https://arxiv.org/abs/2410.04383)] [[Code](https://github.com/amano-k-lab/BrainCodec)]
+
+Brain Decoding of the Human Connectome Project Tasks in a Dense Individual fMRI Dataset  
+[[NeuroImage 2023](https://doi.org/10.1016/j.neuroimage.2023.120395)]
+
+Explainable Deep-Learning Framework: Decoding Brain Task and Predicting Individual Performance in False-Belief Tasks at Early Childhood Stage  
+[[Preprint 2024](https://www.biorxiv.org/content/10.1101/2024.02.29.582682v1)]
+
+Advances in Functional Magnetic Resonance Imaging-Based Brain Decoding and Its Clinical Applications  
+[[Psychoradiology 2025](https://doi.org/10.1093/psyrad/kkaf007)]
+
+Machine Learning for Classifying Affective Valence from fMRI: A Systematic Review  
+[[Affective Science 2025](https://link.springer.com/article/10.1007/s44163-025-00377-8)]
+
+Limits of Decoding Mental States with fMRI  
+*(slightly older but foundational cautionary perspective)*  
+[[NeuroImage 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9238276/)]
+
 
 ---
 
 ## 9. Toolboxes and Awesome Lists
 
-> **Scope:** 通用代码库、预处理工具、以及其它 awesome 列表。
+> **Scope:** General-purpose codebases for brain decoding and fMRI analysis, preprocessing pipelines, and other curated awesome lists relevant to fMRI-based brain decoding.
+
+### 9.1 Decoding / Reconstruction Codebases
 
 DeepImageReconstruction codebase  
 [[GitHub](https://github.com/KamitaniLab/DeepImageReconstruction)]
 
+End-to-end Deep Image Reconstruction  
+[[GitHub](https://github.com/KamitaniLab/End2EndDeepImageReconstruction)]
+
+Inter-individual Deep Image Reconstruction  
+[[GitHub](https://github.com/KamitaniLab/InterIndividualDeepImageReconstruction)]
+
 semantic-decoding (language reconstruction)  
 [[GitHub](https://github.com/HuthLab/semantic-decoding)]
 
-MindEye2 implementation  
+MindEye (fMRI-to-image with contrastive + diffusion priors)  
+[[GitHub](https://github.com/MedARC-AI/fMRI-reconstruction-NSD)]
+
+MindEye2 implementation (shared-subject fMRI-to-image)  
 [[GitHub](https://github.com/MedARC-AI/MindEyeV2)]
 
 Brain-Diffuser implementation  
 [[GitHub](https://github.com/ozcelikfu/brain-diffuser)]
 
-UMBRAE implementation  
+UMBRAE implementation (unified multimodal brain decoding)  
 [[GitHub](https://github.com/weihaox/UMBRAE)]
+
+BrainCLIP implementation  
+[[GitHub](https://github.com/YulongBonjour/BrainCLIP)]
+
+Brain2Music implementation  
+[[GitHub](https://github.com/google-research/google-research/tree/master/brain2music)]
+
+BrainCodec: neural fMRI codec for cognitive-state decoding  
+[[GitHub](https://github.com/amano-k-lab/BrainCodec)]
+
+### 9.2 Preprocessing, Analysis, and Utility Libraries
+
+fMRIPrep – robust preprocessing pipeline for task / resting-state fMRI  
+[[GitHub](https://github.com/nipreps/fmriprep)] [[Docs](https://fmriprep.org/)]
+
+XCP-D – post-processing (denoising, connectivity, QA) for fMRIPrep outputs  
+[[GitHub](https://github.com/PennLINC/xcp_d)]
+
+NiBabies – fMRIPrep-style preprocessing for infant / neonatal MRI  
+[[GitHub](https://github.com/nipreps/nibabies)]
+
+Nilearn – machine learning & decoding tools for neuroimaging in Python  
+[[GitHub](https://github.com/nilearn/nilearn)] [[Docs](https://nilearn.github.io/)]
+
+BrainIAK – Brain Imaging Analysis Kit (advanced fMRI analyses)  
+[[GitHub](https://github.com/brainiak/brainiak)] [[Docs](https://brainiak.org/docs/)] [[Tutorials](https://brainiak.org/tutorials/)]
+
+fmralign – functional alignment and inter-subject mapping  
+[[GitHub](https://github.com/Parietal-INRIA/fmralign)]
+
+bdpy – Brain Decoder Toolbox in Python  
+[[GitHub](https://github.com/KamitaniLab/bdpy)]
+
+### 9.3 Awesome Lists and Related Curations
 
 awesome-brain-decoding (general, multi-modality)  
 [[GitHub](https://github.com/NeuSpeech/awesome-brain-decoding)]
@@ -339,7 +455,10 @@ Awesome Brain Encoding & Decoding
 Awesome Brain Graph Learning with GNNs  
 [[GitHub](https://github.com/XuexiongLuoMQ/Awesome-Brain-Graph-Learning-with-GNNs)]
 
-*(You can also add fMRIPrep, nilearn, visualization tools, etc.)*
+Awesome Neuroimaging in Python (nibabel, nilearn, MNE, etc.)  
+[[GitHub](https://github.com/ofgulban/awesome-neuroimaging-in-python)]
+
+*(You can further extend this section with visualization tools, BIDS utilities, and more decoding-specific codebases as the ecosystem grows.)*
 
 ---
 
