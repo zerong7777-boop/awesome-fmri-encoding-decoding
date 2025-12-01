@@ -151,13 +151,16 @@ Generative language reconstruction from brain recordings (BrainLLM)
 [[Communications Biology 2025](https://www.nature.com/articles/s42003-025-07731-7)] [[Code](https://github.com/YeZiyi1998/Brain-language-generation)]
 
 Language Generation from Human Brain Activities  
-[[CoRR 2023](https://arxiv.org/abs/2311.09889)]
+[[CoRR 2023](https://arxiv.org/abs/2311.09889)] [[Code](https://github.com/YeZiyi1998/Brain-language-generation)]
 
 Decoding Continuous Character-based Language from Non-invasive Brain Recordings  
 [[bioRxiv 2024](https://www.biorxiv.org/content/10.1101/2024.03.19.585656v1)] [[arXiv](https://arxiv.org/abs/2403.11183)] [[Dataset](https://openneuro.org/datasets/ds006630)]
 
+BrainDEC: A Multimodal LLM for the Non-Invasive Decoding of Text from Brain Recordings  
+[[Information Fusion 2025](https://doi.org/10.1016/j.inffus.2025.103589)] [[Code](https://github.com/Hmamouche/brain_decode)]
+
 Brain-Inspired fMRI-to-Text Decoding via Incremental and Wrap-Up Language Modeling (CogReader)  
-[[NeurIPS 2025 Spotlight](https://openreview.net/forum?id=REIo9ZLSYo)] [[PDF](https://openreview.net/pdf?id=REIo9ZLSYo)]
+[[NeurIPS 2025 Spotlight](https://openreview.net/forum?id=REIo9ZLSYo)] [[PDF](https://openreview.net/pdf?id=REIo9ZLSYo)] [[Code](https://anonymous.4open.science/r/CogReader-A42C/)]
 
 Language Reconstruction with Brain Predictive Coding from fMRI Data (PredFT)  
 [[arXiv 2024; submitted to ICLR 2025](https://arxiv.org/abs/2405.11597)]
@@ -166,21 +169,32 @@ MapGuide: A Simple yet Effective Method to Reconstruct Continuous Language from 
 [[NAACL 2024](https://aclanthology.org/2024.naacl-long.211/)] [[PDF](https://aclanthology.org/2024.naacl-long.211.pdf)]
 
 MindLLM: A Subject-Agnostic and Versatile Model for fMRI-to-Text Decoding  
-[[arXiv 2025](https://arxiv.org/abs/2502.15786)]
+[[ICML 2025 (poster)](https://openreview.net/forum?id=EiAQrilPYP)] [[arXiv 2025](https://arxiv.org/abs/2502.15786)] [[Code](https://github.com/Graph-and-Geometric-Learning/MindLLM)]
 
 MindGPT: Interpreting What You See With Non-Invasive Brain Recordings  
-[[IEEE TIP 2025](https://ieeexplore.ieee.org/document/xxxxx)] [[Code](https://github.com/JxuanC/MindGPT)]
+[[IEEE TIP 2025 / arXiv 2023](https://arxiv.org/abs/2309.15729)] [[Code](https://github.com/JxuanC/MindGPT)]
 
 
 ### 3.2 LLM-Prompt and Auditory Language Decoding
 
 Open-vocabulary Auditory Neural Decoding Using fMRI-prompted LLM (Brain Prompt GPT / BP-GPT)  
-[[ACM MM 2024](https://arxiv.org/abs/2405.07840)] [[PDF](https://arxiv.org/pdf/2405.07840.pdf)]
+[[ICASSP 2025 preprint](https://arxiv.org/abs/2405.07840)] [[PDF](https://arxiv.org/pdf/2405.07840.pdf)] [[Code](https://github.com/1994cxy/BP-GPT)]
+
+How Many Bytes Can You Take Out Of Brain-To-Text Decoding?  
+*(Information-theoretic evaluation and augmentation of fMRI→text decoders)*  
+[[arXiv 2024](https://arxiv.org/abs/2405.14055)]
+
 
 ### 3.3 Non-fMRI but Influential Brain-to-Text
 
 Towards decoding individual words from non-invasive brain recordings *(EEG/MEG – non-fMRI but highly influential for non-invasive brain-to-text)*  
 [[Nature Communications 2025](https://www.nature.com/articles/s41467-025-65499-0)]
+
+Decoding speech perception from non-invasive brain recordings *(MEG/EEG contrastive decoding of perceived speech, strong reference for non-invasive language decoding)*  
+[[Nature Machine Intelligence 2023](https://www.nature.com/articles/s42256-023-00714-5)] [[Code](https://github.com/facebookresearch/brainmagick)]
+
+Brain-to-Text Decoding: A Non-invasive Approach via Typing (Brain2Qwerty) *(sentence-level typing decoded from EEG/MEG)*  
+[[arXiv 2025](https://arxiv.org/abs/2502.17480)] [[Project page](https://ai.meta.com/research/publications/brain-to-text-decoding-a-non-invasive-approach-via-typing/)]
 
 ---
 
