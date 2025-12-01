@@ -194,9 +194,6 @@ Brain-Diffuser: Natural scene reconstruction from fMRI signals using generative 
 MindDiffuser: Controlled Image Reconstruction from Human Brain Activity with Semantic and Structural Diffusion  
 [[ACM MM 2023](https://dl.acm.org/doi/10.1145/3581783.3613819)] [[arXiv](https://arxiv.org/abs/2308.04249)] [[Code](https://github.com/YingxingLu/MindDiffuser)]
 
-Dual-Guided Brain Diffusion Model: Natural Image Reconstruction from Human Visual Stimulus fMRI (DBDM)  
-[[Bioengineering 2023](https://www.mdpi.com/2306-5354/10/10/1117)]
-
 Mental image reconstruction from human brain activity  
 [[Neural Networks 2024](https://www.sciencedirect.com/science/article/pii/S0893608023006470)]
 
