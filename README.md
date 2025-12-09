@@ -371,6 +371,9 @@ BrainCLIP: Bridging Brain and Visual-Linguistic Representation via CLIP for Gene
 Modality-Agnostic fMRI Decoding of Vision and Language  
 [[arXiv 2024](https://arxiv.org/abs/2403.11771)] [[Dataset: SemReps-8K](https://elifesciences.org/reviewed-preprints/107933)]
 
+Brain Harmony: A Multimodal Foundation Model Unifying Morphology and Function into 1D Tokens  
+[[NeurIPS 2025](https://openreview.net/pdf/80edac1ff79b10252bcd8be5794855fadbd39ea9.pdf)]  [[Code](https://github.com/hzlab/Brain-Harmony)]
+
 ### 6.2 Video-Oriented and Retrieval-Based Multimodal Decoding
 
 Mind2Word: Towards Generalized Visual Neural Representations for High-Quality Video Reconstruction  
@@ -433,9 +436,6 @@ Advances in Functional Magnetic Resonance Imaging-Based Brain Decoding and Its C
 Machine Learning for Classifying Affective Valence from fMRI: A Systematic Review  
 [[Affective Science 2025](https://link.springer.com/article/10.1007/s44163-025-00377-8)]
 
-Brain Harmony: A Multimodal Foundation Model Unifying Morphology and Function into 1D Tokens  
-*(Also serves as a multimodal foundation model that can initialize or regularize downstream decoders; see also Section [6.1 Unified Vision–Language / Multimodal Decoders](#61-unified-visionlanguage--multimodal-decoders).)*
-[[NeurIPS 2025](https://github.com/hzlab/Brain-Harmony)]
 
 
 ### 8.2 Cognitive Task and Performance Decoding
