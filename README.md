@@ -593,7 +593,7 @@ Explainable Deep-Learning Framework: Decoding Brain Task and Predicting Individu
 
 Scaling Vision Transformers for Functional MRI with Flat Maps  
 *(Provides a scalable ViT-based backbone architecture for a variety of decoding tasks, beyond a single specific paradigm.)*
-[[NeurIPS 2025 (submitted)](link_to_preprint)]
+[[NeurIPS 2025 (Foundation Models for the Brain and Body Workshop)](https://openreview.net/forum?id=L0CpmKEVHw)] [[arXiv](https://arxiv.org/abs/2510.13768)] [[Code](https://github.com/MedARC-AI/fmri-fm)]
 
 ---
 
