@@ -38,15 +38,17 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 - [7. Audio and Music Decoding](#7-audio-and-music-decoding)
   - [7.1 fMRI-Based Music and Audio Decoding](#71-fmri-based-music-and-audio-decoding)
   - [7.2 Non-fMRI but Influential Audio / Music Decoding](#72-non-fmri-but-influential-audio--music-decoding)
-- [8. Clinical / Cognitive and Mental-State Decoding](#8-clinical--cognitive-and-mental-state-decoding)
-  - [8.1 Emotion, Affect, and Clinical Applications](#81-emotion-affect-and-clinical-applications)
+- [8. Mental-State, Cognitive, and Clinical Decoding (Cross-Modality)](#8-mental-state-cognitive-and-clinical-decoding-cross-modality)
+  - [8.1 Affective and Emotion State Decoding](#81-affective-and-emotion-state-decoding)
   - [8.2 Cognitive Task and Performance Decoding](#82-cognitive-task-and-performance-decoding)
-  - [8.3 Methodological and Conceptual Perspectives on Mental-State Decoding](#83-methodological-and-conceptual-perspectives-on-mental-state-decoding)
+  - [8.3 Clinical and Biomarker-Oriented fMRI Decoding](#83-clinical-and-biomarker-oriented-fmri-decoding)
+  - [8.4 Methodological and Conceptual Perspectives on Mental-State Decoding](#84-methodological-and-conceptual-perspectives-on-mental-state-decoding)
 - [9. Toolboxes and Awesome Lists](#9-toolboxes-and-awesome-lists)
   - [9.1 Decoding / Reconstruction Codebases](#91-decoding--reconstruction-codebases)
   - [9.2 Preprocessing, Analysis, and Utility Libraries](#92-preprocessing-analysis-and-utility-libraries)
   - [9.3 Awesome Lists and Related Curations](#93-awesome-lists-and-related-curations)
 - [10. Contributing](#10-contributing)
+
 
 ---
 ## 0. Tag legend
@@ -558,7 +560,7 @@ Decoding the Moving Mind: Multi-Subject fMRI-to-Video Retrieval with MLLM Semant
 
 ## 7. Audio and Music Decoding
 
-> **Scope:** Decoding approaches where the output is **sound** (music, speech, or other acoustic signals) from brain activity; primarily fMRI, plus a few closely related non-invasive modalities when highly influential.
+> **Scope:** Decoding approaches where the **output is sound** (music, general audio). We focus on **fMRI-based** music and audio decoders, and list a few **non-fMRI but closely related** works (iEEG / EEG / MEG) when they have become field-shaping references. Speech and narrative decoding that produce **text** is covered in §3, and multimodal VLM / diffusion pipelines in §6.
 
 ### 7.1 fMRI-Based Music and Audio Decoding
 
@@ -574,45 +576,37 @@ R&B – Rhythm and Brain: Cross-Subject Music Decoding from fMRI via Prior-Guide
 Identifying Musical Pieces from fMRI Data Using Encoding and Decoding Models  
 [[Scientific Reports 2018](https://www.nature.com/articles/s41598-018-20732-3)]
 
-Capturing the Musical Brain with LASSO: Dynamic Decoding of Musical Features from fMRI Data  
-[[NeuroImage 2014](https://doi.org/10.1016/j.neuroimage.2013.11.017)]
-
----
-
-### 7.2 Non-fMRI but Influential Audio / Music Decoding
+### 7.2 Non-fMRI but Influential Music / Audio Decoding
 
 Music Can Be Reconstructed from Human Auditory Cortex Activity Using Nonlinear Decoding Models  
-*(invasive iEEG, but highly relevant for audio reconstruction)*  
+*(iEEG; music reconstruction, often cited together with fMRI work)*  
 [[PLOS Biology 2023](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002176)]
 
 Neural Decoding of Music from the EEG  
-*(EEG with companion fMRI mapping; non-fMRI but conceptually related)*  
+*(EEG combined with fMRI-informed source localisation for music reconstruction and identification)*  
 [[Scientific Reports 2023](https://www.nature.com/articles/s41598-022-27361-x)]
 
 Decoding Reveals the Neural Representation of Perceived and Imagined Musical Sounds  
-*(MEG; key for music imagination decoding)*  
-[[PLOS Biology 2024](https://doi.org/10.1371/journal.pbio.3002858)]
+*(MEG; decoding perceived and imagined melodies)*  
+[[PLOS Biology 2024](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002858)]
 
 ---
 
-## 8. Clinical / Cognitive and Mental-State Decoding
 
-> **Scope:** fMRI-based decoding of **emotion, cognition, and clinically relevant mental states** (e.g., affective valence, attention, spontaneous thought, disease markers), including works that position decoding as a step toward biomarkers or neurofeedback / intervention.
+## 8. Mental-State, Cognitive, and Clinical Decoding (Cross-Modality)
 
-### 8.1 Emotion, Affect, and Clinical Applications
+> **Scope:** fMRI-based decoding of **mental states** (emotion, affect, spontaneous thought, cognitive performance) and **clinically relevant phenotypes** (diagnosis, risk, progression), plus methodological work that directly targets mental-state decoding.  
+> 与第 3–7 节的“按刺激 / 输出模态”分类互补，本节沿着 **[AFFECT]/[COG]/[CLINICAL] tag** 做一个跨模态综览。
+
+### 8.1 Affective and Emotion State Decoding  [AFFECT]
 
 Brain Decoding of Spontaneous Thought: Predictive Modeling of Self-Relevance and Valence Using Personal Narratives  
 [[PNAS 2024](https://www.pnas.org/doi/10.1073/pnas.2401959121)]
 
-Advances in Functional Magnetic Resonance Imaging-Based Brain Decoding and Its Clinical Applications  
-[[Psychoradiology 2025](https://doi.org/10.1093/psyrad/kkaf007)]
-
 Machine Learning for Classifying Affective Valence from fMRI: A Systematic Review  
 [[Affective Science 2025](https://link.springer.com/article/10.1007/s44163-025-00377-8)]
 
----
-
-### 8.2 Cognitive Task and Performance Decoding
+### 8.2 Cognitive Task and Performance Decoding  [COG]
 
 BrainCodec: Neural fMRI Codec for the Decoding of Cognitive Brain States  
 [[arXiv 2024](https://arxiv.org/abs/2410.04383)] [[Code](https://github.com/amano-k-lab/BrainCodec)]
@@ -624,19 +618,26 @@ Explainable Deep-Learning Framework: Decoding Brain Task and Predicting Individu
 [[Preprint 2024](https://www.biorxiv.org/content/10.1101/2024.02.29.582682v1)]
 
 Scaling Vision Transformers for Functional MRI with Flat Maps  
-*(Provides a scalable ViT-based backbone architecture for a variety of decoding tasks, beyond a single specific paradigm.)*
+*(Provides a scalable ViT-based backbone that has been applied to a variety of decoding tasks, including cognitive-state prediction.)*  
 [[NeurIPS 2025 (Foundation Models for the Brain and Body Workshop)](https://openreview.net/forum?id=L0CpmKEVHw)] [[arXiv](https://arxiv.org/abs/2510.13768)] [[Code](https://github.com/MedARC-AI/fmri-fm)]
 
----
+### 8.3 Clinical and Biomarker-Oriented fMRI Decoding  [CLINICAL]
 
-### 8.3 Methodological and Conceptual Perspectives on Mental-State Decoding
+Advances in Functional Magnetic Resonance Imaging-Based Brain Decoding and Its Clinical Applications  
+[[Psychoradiology 2025](https://doi.org/10.1093/psyrad/kkaf007)]
+
+*(See also §2.5 for large-scale clinical / psychiatric cohorts that are commonly used as downstream benchmarks.)*
+
+### 8.4 Methodological and Conceptual Perspectives on Mental-State Decoding
 
 Benchmarking Explanation Methods for Mental State Decoding with Deep Learning Models  
 [[NeuroImage 2023](https://doi.org/10.1016/j.neuroimage.2023.120109)] [[Code](https://github.com/athms/xai-brain-decoding-benchmark)]
 
 Limits of Decoding Mental States with fMRI  
-*(slightly older but foundational cautionary perspective)*  
+*(Foundational cautionary perspective on what can and cannot be inferred from decoding models.)*  
 [[NeuroImage 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9238276/)]
+
+---
 
 ---
 
