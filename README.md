@@ -59,6 +59,8 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 - [COG] cognitive task / performance decoding
 - [BCI] communication / control-oriented brain–computer interfaces
 
+---
+
 
 ## 1. Surveys and Overviews
 
@@ -84,6 +86,8 @@ Visualizing the mind’s eye: a future perspective on image reconstruction from 
 Deep Generative Models in Brain Encoding and Decoding  
 [[Engineering 2019](https://doi.org/10.1016/j.eng.2019.03.011)]
 
+---
+
 ### 1.2 Language and Narrative Neural Decoding
 
 Progress, challenges and future of linguistic neural decoding with deep learning  
@@ -91,6 +95,8 @@ Progress, challenges and future of linguistic neural decoding with deep learning
 
 Artificial intelligence based multimodal language decoding from brain activity: A review  
 [[Brain Research Bulletin 2023](https://doi.org/10.1016/j.brainresbull.2023.110713)]
+
+---
 
 ### 1.3 General Brain Decoding, BCI, and Deep Learning Perspectives
 
@@ -126,6 +132,8 @@ BOLD5000 – slow event-related fMRI dataset for ~5k images drawn from COCO / Im
 Deep Image Reconstruction (DIR) dataset – single-subject fMRI for natural images used in the Kamitani deep image reconstruction work.  
 [[PLoS Comput Biol 2019](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006633)] [[OpenNeuro ds001506](https://openneuro.org/datasets/ds001506)]
 
+---
+
 ### 2.2 Language and Narrative Datasets
 
 Narratives / Story listening datasets – multi-subject naturalistic spoken-story fMRI.  
@@ -137,42 +145,47 @@ Semantic reconstruction of continuous language – dataset used in the Nature Ne
 Natural language fMRI dataset for voxelwise encoding models – five multi-session natural-language listening datasets for voxelwise encoding.  
 [[Scientific Data 2023](https://www.nature.com/articles/s41597-023-02437-z)] [[GitHub](https://github.com/HuthLab/deep-fMRI-dataset)]
 
+---
+
 ### 2.3 Video, Affective, and Multimodal Naturalistic Datasets
 
 BOLD Moments Dataset (BMD) – video fMRI responses to ~1k short naturalistic clips with rich object / action / text metadata.  
 [[Nature Communications 2024](https://www.nature.com/articles/s41467-024-50310-3)] [[OpenNeuro ds005165](https://openneuro.org/datasets/ds005165)] [[Code](https://github.com/blahner/BOLDMomentsDataset)]
 
-Spacetop – multimodal fMRI dataset with >100 participants, combining movie viewing with a broad battery of cognitive / affective tasks and physiology.  
+[AFFECT] [COG] Spacetop – multimodal fMRI dataset with >100 participants, combining movie viewing with a broad battery of cognitive / affective tasks and physiology.  
 [[Scientific Data 2025](https://www.nature.com/articles/s41597-025-05154-x)] [[OpenNeuro ds005256](https://openneuro.org/datasets/ds005256)]
 
-Emo-FilM – film-based fMRI with dense emotion annotations and concurrent physiological recordings.  
+[AFFECT] Emo-FilM – film-based fMRI with dense emotion annotations and concurrent physiological recordings.  
 [[Scientific Data 2025](https://www.nature.com/articles/s41597-025-04803-5)] [[OpenNeuro ds004892](https://openneuro.org/datasets/ds004892)]
+
+---
+
 
 ### 2.4 Large-Scale Population Imaging Cohorts (Pretraining-Oriented)
 
-Human Connectome Project (HCP, Young Adult S1200) – multimodal MRI for ~1.2k healthy young adults (3T structural, resting-state and task fMRI, diffusion MRI), with a subset scanned at 7T and some MEG; widely used for connectivity, representation learning, and population-based decoding.  
+[COG] Human Connectome Project (HCP, Young Adult S1200) – multimodal MRI for ~1.2k healthy young adults (3T structural, resting-state and task fMRI, diffusion MRI), with a subset scanned at 7T and some MEG; widely used for connectivity, representation learning, and population-based decoding.  
 [[NeuroImage 2013](https://doi.org/10.1016/j.neuroimage.2013.05.041)] [[S1200 Data Releases](https://www.humanconnectome.org/study/hcp-young-adult/data-releases)] [[S1200 Reference Manual (PDF)](https://www.humanconnectome.org/storage/app/media/documentation/s1200/HCP_S1200_Release_Reference_Manual.pdf)]
 
-UK Biobank Imaging – very large population cohort (>100k participants targeted) with structural MRI, resting-state and task fMRI, and other imaging (cardiac, abdominal, DXA, carotid ultrasound); primarily designed for population health and genetics, but increasingly used for large-scale brain encoder pretraining and brain–phenotype prediction.  
+[CLINICAL] UK Biobank Imaging – very large population cohort (>100k participants targeted) with structural MRI, resting-state and task fMRI, and other imaging (cardiac, abdominal, DXA, carotid ultrasound); primarily designed for population health and genetics, but increasingly used for large-scale brain encoder pretraining and brain–phenotype prediction.  
 [[NeuroImage 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC5086094/)] [[Nature Communications 2020 imaging enhancement](https://www.nature.com/articles/s41467-020-15948-9)] [[Imaging project overview](https://www.ukbiobank.ac.uk/taking-part/participant-opportunities/imaging-project/)]
 
-ABCD Study (Adolescent Brain Cognitive Development) – longitudinal cohort (~10k+ children/adolescents) with structural MRI, diffusion, resting-state and task fMRI (e.g., MID, SST, n-back), plus rich behavioral, cognitive, and environmental measures; useful for developmental decoding and pretraining.  
+[COG] ABCD Study (Adolescent Brain Cognitive Development) – longitudinal cohort (~10k+ children/adolescents) with structural MRI, diffusion, resting-state and task fMRI (e.g., MID, SST, n-back), plus rich behavioral, cognitive, and environmental measures; useful for developmental decoding and pretraining.  
 [[Dev Cogn Neurosci 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC5999559/)] [[ABCD Study website](https://abcdstudy.org/)] [[Imaging documentation](https://docs.abcdstudy.org/latest/documentation/imaging/)]
 
 ---
 
 ### 2.5 Clinical, Psychiatric, and Cognitive/Developmental Cohorts (Downstream Tasks)
 
-PPMI (Parkinson’s Progression Markers Initiative) – longitudinal, multi-center cohort with extensive clinical, multi-modal imaging (structural MRI, DaTscan, and additional MRI sequences at some sites), biospecimens and genetics for Parkinson’s disease and at-risk individuals; standard benchmark for PD progression modeling and biomarker discovery.  
+[CLINICAL] PPMI (Parkinson’s Progression Markers Initiative) – longitudinal, multi-center cohort with extensive clinical, multi-modal imaging (structural MRI, DaTscan, and additional MRI sequences at some sites), biospecimens and genetics for Parkinson’s disease and at-risk individuals; standard benchmark for PD progression modeling and biomarker discovery.  
 [[Prog Neurobiol 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6292383/)] [[Study website](https://www.ppmi-info.org/)] [[Data access](https://www.ppmi-info.org/access-data-specimens/download-data)]
 
-ADNI (Alzheimer’s Disease Neuroimaging Initiative) – multi-center longitudinal study with structural MRI, PET, some resting-state fMRI derivatives, cognitive assessments, genetics and CSF/blood biomarkers for MCI / Alzheimer’s and controls; widely used for neurodegenerative disease prediction and progression modeling.  
+[CLINICAL] ADNI (Alzheimer’s Disease Neuroimaging Initiative) – multi-center longitudinal study with structural MRI, PET, some resting-state fMRI derivatives, cognitive assessments, genetics and CSF/blood biomarkers for MCI / Alzheimer’s and controls; widely used for neurodegenerative disease prediction and progression modeling.  
 [[ADNI neuroimaging overview](https://adni.loni.usc.edu/data-samples/adni-data/neuroimaging/)] [[ADNI MRI component](https://adni.loni.usc.edu/data-samples/adni-data/neuroimaging/mri/)] [[ADNI Data portal](https://adni.loni.usc.edu/data-samples/adni-data/)]
 
-ABIDE I / II (Autism Brain Imaging Data Exchange) – multi-site repositories aggregating structural MRI and resting-state fMRI for individuals with autism spectrum disorder and controls; standard benchmark for ASD classification, connectome-based decoding, and cross-site generalization.  
+[CLINICAL] [COG] ABIDE I / II (Autism Brain Imaging Data Exchange) – multi-site repositories aggregating structural MRI and resting-state fMRI for individuals with autism spectrum disorder and controls; standard benchmark for ASD classification, connectome-based decoding, and cross-site generalization.  
 [[ABIDE overview (NeuroImage 2014)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4162310/)] [[ABIDE portal](http://fcon_1000.projects.nitrc.org/indi/abide/)] [[ABIDE II](http://fcon_1000.projects.nitrc.org/indi/abide/abide_II.html)] [[ABIDE Preprocessed](https://preprocessed-connectomes-project.org/abide/)]
 
-ADHD-200 – multi-site structural MRI and resting-state fMRI dataset for ADHD and typically-developing controls, originally released for the ADHD-200 Global Competition; extensively used as a benchmark for rs-fMRI–based psychiatric diagnosis and generalization across scanners/sites.  
+[CLINICAL] [COG] ADHD-200 – multi-site structural MRI and resting-state fMRI dataset for ADHD and typically-developing controls, originally released for the ADHD-200 Global Competition; extensively used as a benchmark for rs-fMRI–based psychiatric diagnosis and generalization across scanners/sites.  
 [[ADHD-200 portal](http://fcon_1000.projects.nitrc.org/indi/adhd200/)] [[Global Competition summary](https://pmc.ncbi.nlm.nih.gov/articles/PMC3460316/)] [[ADHD-200 Preprocessed](https://preprocessed-connectomes-project.org/adhd200/)]
 
 ---
