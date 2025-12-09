@@ -1,6 +1,6 @@
-# Awesome fMRI Decoding (Categorized)
+# Awesome fMRI Encoding, Decoding, and Representations
 
-A curated list of **fMRI-based brain decoding** papers and resources, focusing on **reconstructing images / videos / language / audio from brain activity** (plus a few closely related visual-encoding works that directly support decoding).
+A curated list of fMRI-centric **encoding models, decoding frameworks, and representational analyses**, covering language/narrative, visual reconstruction, video, audio/music, mental state, and BCI applications.
 
 If you find this repo helpful, please give it a ⭐ and consider contributing new papers via pull requests.
 
