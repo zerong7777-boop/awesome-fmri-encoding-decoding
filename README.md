@@ -314,9 +314,6 @@ Deep image reconstruction from human brain activity
 From voxels to pixels and back: Self-supervision in natural-image reconstruction from fMRI  
 [[NeurIPS 2019](https://arxiv.org/abs/1907.02431)] [[Code](https://github.com/WeizmannVision/ssfmri2im)]
 
-Reconstructing Natural Scenes from fMRI Patterns using BigBiGAN  
-[[IJCNN 2020](https://arxiv.org/abs/2011.12243)]
-
 High-resolution image reconstruction with latent diffusion models from human brain activity  
 [[CVPR 2023](https://openaccess.thecvf.com/content/CVPR2023/html/Takagi_High-Resolution_Image_Reconstruction_With_Latent_Diffusion_Models_From_Human_Brain_CVPR_2023_paper.html)] [[Project](https://sites.google.com/view/stablediffusion-with-brain/)] [[Code](https://github.com/yu-takagi/StableDiffusionReconstruction)]
 
@@ -325,9 +322,6 @@ Seeing Beyond the Brain: Conditional Diffusion Model with Sparse Masked Modeling
 
 Reconstructing the Mind’s Eye: fMRI-to-Image with Contrastive Learning and Diffusion Priors (MindEye)  
 [[NeurIPS 2023](https://arxiv.org/abs/2305.18274)] [[Project](https://medarc-ai.github.io/mindeye/)] [[Code](https://github.com/MedARC-AI/fMRI-reconstruction-NSD)]
-
-Brain-Diffuser: Natural scene reconstruction from fMRI signals using generative latent diffusion  
-[[Scientific Reports 2023](https://www.nature.com/articles/s41598-023-42891-8)] [[arXiv](https://arxiv.org/abs/2303.05334)] [[Code](https://github.com/ozcelikfu/brain-diffuser)]
 
 MindDiffuser: Controlled Image Reconstruction from Human Brain Activity with Semantic and Structural Diffusion  
 [[ACM MM 2023](https://dl.acm.org/doi/10.1145/3581783.3613819)] [[arXiv](https://arxiv.org/abs/2308.04249)] [[Code](https://github.com/YingxingLu/MindDiffuser)]
@@ -367,10 +361,10 @@ Balancing Semantic and Structural Decoding for fMRI-to-Image Reconstruction
 [[AAAI 2025](https://ojs.aaai.org/index.php/AAAI/article/view/33554)] [[arXiv](https://arxiv.org/abs/2404.13282)]
 
 [X-SUBJ] BrainGuard: Privacy-Preserving Multisubject Image Reconstructions from Brain Activities  
-[[AAAI 2025 Oral](https://ojs.aaai.org/index.php/AAAI/article/view/33579)] [[arXiv](https://arxiv.org/abs/2501.14309)] [[Project](https://github.com/kunzhan/brainguard)]
+[[AAAI 2025 (Oral)](https://ojs.aaai.org/index.php/AAAI/article/view/33579)] [[arXiv](https://arxiv.org/abs/2501.14309)] [[Project](https://github.com/kunzhan/brainguard)]
 
 [X-SUBJ] MoRE-Brain: Routed Mixture of Experts for Interpretable and Generalizable Cross-Subject fMRI Visual Decoding  
-[[OpenReview](https://openreview.net/forum?id=fYSPRGmS6l)] [[arXiv](https://arxiv.org/abs/2505.15946)] [[Code](https://github.com/yuxiangwei0808/MoRE-Brain)]
+[[NeurIPS 2025](https://openreview.net/forum?id=fYSPRGmS6l)] [[arXiv](https://arxiv.org/abs/2505.15946)] [[Code](https://github.com/yuxiangwei0808/MoRE-Brain)]
 
 [X-SUBJ] Inter-individual and inter-site neural code conversion without shared stimuli  
 *(General-purpose cross-subject / cross-site alignment that can support various decoding tasks beyond visual reconstruction.)*  
@@ -415,9 +409,6 @@ BrainBits: How Much of the Brain are Generative Reconstruction Methods Using?
 
 Reconstructing visual experiences from brain activity evoked by natural movies  
 [[Current Biology 2011](https://www.sciencedirect.com/science/article/pii/S0960982211009377)]
-
-Decoding the Semantic Content of Natural Movies from Human Brain Activity  
-[[Frontiers in Systems Neuroscience 2016](https://www.frontiersin.org/articles/10.3389/fnsys.2016.00081/full)]
 
 Neural encoding and decoding with deep learning for dynamic natural vision  
 [[Cerebral Cortex 2018](https://academic.oup.com/cercor/article/28/12/4136/4560155)]
