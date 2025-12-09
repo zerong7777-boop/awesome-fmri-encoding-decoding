@@ -240,19 +240,19 @@ High-level visual representations in the human brain are aligned with large lang
 Towards Brain-to-Text Generation: Neural Decoding with Pre-trained Encoder-Decoder Models
 [[NeurIPS 2021 (AI4Science Workshop](https://openreview.net/forum?id=13IJlk221xG)]
 
-UniCoRN: Unified Cognitive Signal ReconstructioN bridging cognitive signals and human language
+[FM] UniCoRN: Unified Cognitive Signal ReconstructioN bridging cognitive signals and human language  
 [[ACL 2023](https://aclanthology.org/2023.acl-long.741/)] 
 
-Decoding Continuous Character-based Language from Non-invasive Brain Recordings  
+[X-SUBJ] Decoding Continuous Character-based Language from Non-invasive Brain Recordings  
 [[bioRxiv 2024](https://www.biorxiv.org/content/10.1101/2024.03.19.585656v1)] [[arXiv](https://arxiv.org/abs/2403.11183)] [[Dataset](https://openneuro.org/datasets/ds006630)]
 
-BrainDEC: A Multimodal LLM for the Non-Invasive Decoding of Text from Brain Recordings  
+[FM] BrainDEC: A Multimodal LLM for the Non-Invasive Decoding of Text from Brain Recordings  
 [[Information Fusion 2025](https://doi.org/10.1016/j.inffus.2025.103589)] [[Code](https://github.com/Hmamouche/brain_decode)]
 
 Brain-Inspired fMRI-to-Text Decoding via Incremental and Wrap-Up Language Modeling (CogReader)  
 [[NeurIPS 2025 Spotlight](https://openreview.net/forum?id=REIo9ZLSYo)] [[Code](https://github.com/WENXUYUN/CogReader)]
 
-MindLLM: A Subject-Agnostic and Versatile Model for fMRI-to-Text Decoding  
+[FM] [X-SUBJ] MindLLM: A Subject-Agnostic and Versatile Model for fMRI-to-Text Decoding  
 [[ICML 2025 (poster)](https://openreview.net/forum?id=EiAQrilPYP)] [[arXiv 2025](https://arxiv.org/abs/2502.15786)] [[Code](https://github.com/Graph-and-Geometric-Learning/MindLLM)]
 
 MindGPT: Interpreting What You See With Non-Invasive Brain Recordings  
@@ -261,26 +261,26 @@ MindGPT: Interpreting What You See With Non-Invasive Brain Recordings
 Open-vocabulary Auditory Neural Decoding Using fMRI-prompted LLM (Brain Prompt GPT / BP-GPT)  
 [[ICASSP 2025 preprint](https://arxiv.org/abs/2405.07840)] [[Code](https://github.com/1994cxy/BP-GPT)]
 
-Generative language reconstruction from brain recordings (BrainLLM)  
+[FM] Generative language reconstruction from brain recordings (BrainLLM)  
 [[Communications Biology 2025](https://www.nature.com/articles/s42003-025-07731-7)] [[Code](https://github.com/YeZiyi1998/Brain-language-generation)]
 
-fMRI-LM: Towards a Universal Foundation Model for Multi-Task Brain Decoding
+[FM] [X-SUBJ] fMRI-LM: Towards a Universal Foundation Model for Multi-Task Brain Decoding  
 [[arXiv](https://www.arxiv.org/abs/2511.21760)]
 
-Brain-language fusion enables interactive neural readout and in-silico experimentation (CorText / CorText-AMA)
+[FM] Brain-language fusion enables interactive neural readout and in-silico experimentation (CorText / CorText-AMA)  
 [[arXiv](https://arxiv.org/abs/2509.23941)]
 
 ---
 
 ### 3.4 Non-fMRI but Influential Brain-to-Text
 
-Decoding speech perception from non-invasive brain recordings *(MEG/EEG contrastive decoding of perceived speech, strong reference for non-invasive language decoding)*  
+[X-SUBJ] Decoding speech perception from non-invasive brain recordings *(MEG/EEG contrastive decoding of perceived speech, strong reference for non-invasive language decoding)*  
 [[Nature Machine Intelligence 2023](https://www.nature.com/articles/s42256-023-00714-5)] [[Code](https://github.com/facebookresearch/brainmagick)]
 
-Towards decoding individual words from non-invasive brain recordings *(EEG/MEG – non-fMRI but highly influential for non-invasive brain-to-text)*  
+[X-SUBJ] Towards decoding individual words from non-invasive brain recordings *(EEG/MEG – non-fMRI but highly influential for non-invasive brain-to-text)*  
 [[Nature Communications 2025](https://www.nature.com/articles/s41467-025-65499-0)]
 
-Brain-to-Text Decoding: A Non-invasive Approach via Typing (Brain2Qwerty) *(sentence-level typing decoded from EEG/MEG)*  
+[BCI] [X-SUBJ] Brain-to-Text Decoding: A Non-invasive Approach via Typing (Brain2Qwerty) *(sentence-level typing decoded from EEG/MEG)*  
 [[arXiv 2025](https://arxiv.org/abs/2502.17480)] [[Project page](https://ai.meta.com/research/publications/brain-to-text-decoding-a-non-invasive-approach-via-typing/)]
 
 
@@ -355,28 +355,28 @@ Balancing Semantic and Structural Decoding for fMRI-to-Image Reconstruction
 
 > Still Brain→Image, but emphasizing **cross-subject generalization**, few-shot adaptation, mixture-of-experts, and shared-subject models.
 
-MindEye2: Shared-Subject Models Enable fMRI-To-Image With 1 Hour of Data  
+[X-SUBJ] MindEye2: Shared-Subject Models Enable fMRI-To-Image With 1 Hour of Data  
 [[ICML 2024](https://proceedings.mlr.press/v235/scotti24a.html)] [[arXiv](https://arxiv.org/abs/2403.11207)] [[Project](https://medarc-ai.github.io/mindeye2/)] [[Code](https://github.com/MedARC-AI/MindEyeV2)]
 
-ZEBRA: Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding  
+[X-SUBJ] ZEBRA: Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding  
 [[NeurIPS 2025](https://openreview.net/pdf/7a4f583ef54685490be5c58986a3ad803aac087c.pdf)] [[Code](https://github.com/xmed-lab/ZEBRA)]
 
-Psychometry: An Omnifit Model for Image Reconstruction from Human Brain Activity  
+[FM] [X-SUBJ] Psychometry: An Omnifit Model for Image Reconstruction from Human Brain Activity  
 [[CVPR 2024](https://openaccess.thecvf.com/content/CVPR2024/html/Quan_Psychometry_An_Omnifit_Model_for_Image_Reconstruction_from_Human_Brain_CVPR_2024_paper.html)] [[arXiv](https://arxiv.org/abs/2403.20022)]
 
-NeuroPictor: Refining fMRI-to-Image Reconstruction via Multi-individual Pretraining and Multi-level Modulation  
+[X-SUBJ] NeuroPictor: Refining fMRI-to-Image Reconstruction via Multi-individual Pretraining and Multi-level Modulation  
 [[ECCV 2024](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06746.pdf)] [[arXiv](https://arxiv.org/abs/2403.18211)] [[Project](https://jingyanghuo.github.io/neuropictor/)]
 
-Wills Aligner: Multi-Subject Collaborative Brain Visual Decoding  
+[X-SUBJ] Wills Aligner: Multi-Subject Collaborative Brain Visual Decoding  
 [[AAAI 2025](https://ojs.aaai.org/index.php/AAAI/article/view/33554)] [[arXiv](https://arxiv.org/abs/2404.13282)]
 
-BrainGuard: Privacy-Preserving Multisubject Image Reconstructions from Brain Activities  
+[X-SUBJ] BrainGuard: Privacy-Preserving Multisubject Image Reconstructions from Brain Activities  
 [[AAAI 2025 Oral](https://ojs.aaai.org/index.php/AAAI/article/view/33579)] [[arXiv](https://arxiv.org/abs/2501.14309)] [[Project](https://github.com/kunzhan/brainguard)]
 
-MoRE-Brain: Routed Mixture of Experts for Interpretable and Generalizable Cross-Subject fMRI Visual Decoding  
+[X-SUBJ] MoRE-Brain: Routed Mixture of Experts for Interpretable and Generalizable Cross-Subject fMRI Visual Decoding  
 [[OpenReview](https://openreview.net/forum?id=fYSPRGmS6l)] [[arXiv](https://arxiv.org/abs/2505.15946)] [[Code](https://github.com/yuxiangwei0808/MoRE-Brain)]
 
-Inter-individual and inter-site neural code conversion without shared stimuli  
+[X-SUBJ] Inter-individual and inter-site neural code conversion without shared stimuli  
 *(A general-purpose cross-subject / cross-site alignment method that can support various decoding tasks beyond visual reconstruction.)*
 [[Nature Computational Science 2025](https://doi.org/10.1038/s43588-025-00826-5)]
 
@@ -404,7 +404,7 @@ BrainBits: How Much of the Brain are Generative Reconstruction Methods Using?
 Self-Supervised Natural Image Reconstruction and Large-Scale Semantic Classification from Brain Activity  
 [[NeuroImage 2022](https://www.sciencedirect.com/science/article/pii/S105381192200249X)]
 
-The Wisdom of a Crowd of Brains: A Universal Brain Encoder  
+[FM] [X-SUBJ] The Wisdom of a Crowd of Brains: A Universal Brain Encoder  
 [[arXiv 2024](https://arxiv.org/abs/2406.12179)]
 
 SynBrain: Enhancing Visual-to-fMRI Synthesis via Probabilistic Representation Learning  
@@ -447,31 +447,42 @@ NEURONS: Emulating the Human Visual Cortex Improves Fidelity and Interpretabilit
 
 ## 6. Multimodal and Foundation-Model-based Decoding
 
-> **Scope:** Decoders that make central use of **foundation models** (e.g., CLIP, Stable Diffusion, VLMs, LMMs) and/or provide **unified frameworks** to decode multiple modalities (images + text + video, etc.) from brain activity.
+> **Scope:** Methods that treat brain activity as one modality inside **large pretrained models** (e.g., CLIP, Stable Diffusion, VLMs, LMMs), and/or build **foundation-style brain encoders** that work across tasks, datasets, or modalities.  
+> This section is method-oriented and cuts across output modalities; many entries in §§3–5 that fit this category are tagged with **[FM]** (foundation-style brain model) and/or **[X-SUBJ]** (explicit cross-subject generalization).
 
-### 6.1 Unified Vision–Language / Multimodal Decoders
+### 6.1 Unified Vision–Language / Multimodal Decoders & Brain Foundation Models
 
-UMBRAE: Unified Multimodal Brain Decoding  
+[FM][X-SUBJ] UMBRAE: Unified Multimodal Brain Decoding  
 [[ECCV 2024](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/01133.pdf)] [[Project](https://weihaox.github.io/UMBRAE/)] [[Code](https://github.com/weihaox/UMBRAE)]
 
 BrainCLIP: Bridging Brain and Visual-Linguistic Representation via CLIP for Generic Natural Visual Stimulus Decoding  
 [[arXiv 2023](https://arxiv.org/abs/2302.12971)] [[Code](https://github.com/YulongBonjour/BrainCLIP)]
 
 Modality-Agnostic fMRI Decoding of Vision and Language  
-[[arXiv 2024](https://arxiv.org/abs/2403.11771)] [[Dataset: SemReps-8K](https://elifesciences.org/reviewed-preprints/107933)]
+*(Single decoder jointly trained on image + text stimuli representations; modality-agnostic fMRI decoding of vision and language.)*  
+[[ICLR 2024 Workshop on Representational Alignment](https://openreview.net/forum?id=7gWQL0hTrX)] [[arXiv](https://arxiv.org/abs/2403.11771)]
 
-Brain Harmony: A Multimodal Foundation Model Unifying Morphology and Function into 1D Tokens  
-[[NeurIPS 2025](https://openreview.net/pdf/80edac1ff79b10252bcd8be5794855fadbd39ea9.pdf)]  [[Code](https://github.com/hzlab/Brain-Harmony)]
+[FM][X-SUBJ] Brain Harmony: A Multimodal Foundation Model Unifying Morphology and Function into 1D Tokens  
+[[NeurIPS 2025](https://openreview.net/pdf/80edac1ff79b10252bcd8be5794855fadbd39ea9.pdf)] [[arXiv](https://arxiv.org/abs/2509.24693)]
+
+> **See also foundation-style / universal brain models tagged [FM] in other sections:**
+> - **Language / narrative (§3.3):** [FM][X-SUBJ] *MindLLM: A Subject-Agnostic and Versatile Model for fMRI-to-Text Decoding*; [FM] *BrainDEC*; [FM] *BrainLLM*; [FM][X-SUBJ] *fMRI-LM*; *Brain-language fusion enables interactive neural readout and in-silico experimentation (CorText / CorText-AMA).*  
+> - **Visual decoding & encoders (§4.4, §4.6):** [FM][X-SUBJ] *Psychometry: An Omnifit Model for Image Reconstruction from Human Brain Activity*; [FM][X-SUBJ] *The Wisdom of a Crowd of Brains: A Universal Brain Encoder*; *Self-Supervised Natural Image Reconstruction and Large-Scale Semantic Classification from Brain Activity.*
 
 ---
 
 ### 6.2 Video-Oriented and Retrieval-Based Multimodal Decoding
 
 Mind2Word: Towards Generalized Visual Neural Representations for High-Quality Video Reconstruction  
+*(Two-stage framework that maps fMRI to pseudo-words in a text embedding space and then uses a video generator / diffusion model for high-quality video reconstruction.)*  
 [[Expert Systems with Applications 2025](https://www.sciencedirect.com/science/article/pii/S095741742502771X)]
 
 Decoding the Moving Mind: Multi-Subject fMRI-to-Video Retrieval with MLLM Semantic Grounding  
+*(fMRI-to-video retrieval using multi-subject training and multimodal large language models for semantic grounding.)*  
 [[bioRxiv 2025](https://www.biorxiv.org/content/10.1101/2025.04.07.647335v1)]
+
+> **Related task-specific sections:** For more video-focused methods (including purely visual reconstructions without an explicit multimodal / foundation-model angle), see **§5. Video and Dynamic Scene Decoding**.
+
 
 ---
 
