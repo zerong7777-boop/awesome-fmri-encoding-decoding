@@ -24,15 +24,14 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
   - [3.3 Generative & LLM-Based Brain-to-Text Decoders (fMRI)](#33-generative--llm-based-brain-to-text-decoders-fmri)
   - [3.4 Non-fMRI but Influential Brain-to-Text](#34-non-fmri-but-influential-brain-to-text)
 - [4. Visual Image Reconstruction (Brain → Image)](#4-visual-image-reconstruction-brain--image)
-  - [4.1 Classical and Pre-Generative](#41-classical-and-pre-generative)
-  - [4.2 GAN / VAE-based](#42-gan--vae-based)
-  - [4.3 Diffusion-based Reconstruction](#43-diffusion-based-reconstruction)
-  - [4.4 Cross-Subject and Generalizable Decoding](#44-cross-subject-and-generalizable-decoding)
-  - [4.5 Interpretability and Concept-Level Decoding](#45-interpretability-and-concept-level-decoding)
-  - [4.6 Visual-to-fMRI Synthesis and Data Augmentation](#46-visual-to-fmri-synthesis-and-data-augmentation)
+  - [4.1 Classical and Pre-Deep-Learning Reconstruction](#41-classical-and-pre-deep-learning-reconstruction)
+  - [4.2 Deep Generative Reconstruction with Learned Image Priors](#42-deep-generative-reconstruction-with-learned-image-priors)
+  - [4.3 Cross-Subject and Universal Visual Decoders / Encoders](#43-cross-subject-and-universal-visual-decoders--encoders)
+  - [4.4 Interpretability and Concept-Level Decoding](#44-interpretability-and-concept-level-decoding)
 - [5. Video and Dynamic Scene Decoding](#5-video-and-dynamic-scene-decoding)
-  - [5.1 Classical and Encoding/Decoding Frameworks for Movies](#51-classical-and-encodingdecoding-frameworks-for-movies)
-  - [5.2 Deep Generative fMRI-to-Video Reconstruction](#52-deep-generative-fmri-to-video-reconstruction)
+  - [5.1 Classical Encoding and Semantic Decoding Frameworks for Movies](#51-classical-encoding-and-semantic-decoding-frameworks-for-movies)
+  - [5.2 Representation-Alignment and Retrieval-Based Video Decoders](#52-representation-alignment-and-retrieval-based-video-decoders)
+  - [5.3 Deep Generative fMRI-to-Video Reconstruction](#53-deep-generative-fmri-to-video-reconstruction)
 - [6. Multimodal and Foundation-Model-based Decoding](#6-multimodal-and-foundation-model-based-decoding)
   - [6.1 Unified Vision–Language / Multimodal Decoders](#61-unified-visionlanguage--multimodal-decoders)
   - [6.2 Video-Oriented and Retrieval-Based Multimodal Decoding](#62-video-oriented-and-retrieval-based-multimodal-decoding)
@@ -289,11 +288,13 @@ Open-vocabulary Auditory Neural Decoding Using fMRI-prompted LLM (Brain Prompt G
 
 ## 4. Visual Image Reconstruction (Brain → Image)
 
-> **Scope:** Methods that reconstruct **static images** from brain activity (typically fMRI). Sub-categories 4.1–4.6 group works by the main generative backbone (classical / GAN / diffusion) or by a key modeling focus (cross-subject generalization, interpretability, visual-to-fMRI synthesis).
+> **Scope:** Static image reconstruction from brain activity (mostly fMRI).  
 
-### 4.1 Classical and Pre-Generative
+---
 
-> Early approaches that do **not** rely on modern deep generative image models (GAN / diffusion).
+### 4.1 Classical and Pre-Deep-Learning Reconstruction
+
+> Early approaches that do **not** rely on modern deep generative image models, often based on hand-crafted features or simpler encoding/decoding pipelines.
 
 Visual image reconstruction from human brain activity using a combination of multiscale local image decoders  
 [[Neuron 2008](https://doi.org/10.1016/j.neuron.2008.11.004)]
@@ -303,9 +304,9 @@ Reconstructing Natural Scenes from fMRI Patterns using Hierarchical Visual Featu
 
 ---
 
-### 4.2 GAN / VAE-based
+### 4.2 Deep Generative Reconstruction with Learned Image Priors
 
-> Generative backbone is mainly **GAN / VAE / convnets**, rather than diffusion.
+> fMRI→image reconstruction that uses **deep generative models** as image priors (GAN, latent diffusion, Stable Diffusion variants, etc.).
 
 Deep image reconstruction from human brain activity  
 [[PLoS Comput Biol 2019](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006633)] [[Code](https://github.com/KamitaniLab/DeepImageReconstruction)] [[Dataset](https://openneuro.org/datasets/ds001506)]
@@ -315,12 +316,6 @@ From voxels to pixels and back: Self-supervision in natural-image reconstruction
 
 Reconstructing Natural Scenes from fMRI Patterns using BigBiGAN  
 [[IJCNN 2020](https://arxiv.org/abs/2011.12243)]
-
----
-
-### 4.3 Diffusion-based Reconstruction
-
-> fMRI→image methods that use **diffusion / latent diffusion / Stable Diffusion** as the main generative prior.
 
 High-resolution image reconstruction with latent diffusion models from human brain activity  
 [[CVPR 2023](https://openaccess.thecvf.com/content/CVPR2023/html/Takagi_High-Resolution_Image_Reconstruction_With_Latent_Diffusion_Models_From_Human_Brain_CVPR_2023_paper.html)] [[Project](https://sites.google.com/view/stablediffusion-with-brain/)] [[Code](https://github.com/yu-takagi/StableDiffusionReconstruction)]
@@ -351,9 +346,10 @@ Balancing Semantic and Structural Decoding for fMRI-to-Image Reconstruction
 
 ---
 
-### 4.4 Cross-Subject and Generalizable Decoding
+### 4.3 Cross-Subject and Universal Visual Decoders / Encoders
 
-> Still Brain→Image, but emphasizing **cross-subject generalization**, few-shot adaptation, mixture-of-experts, and shared-subject models.
+> Brain→image decoders and image→fMRI encoders that explicitly target **cross-subject / cross-site generalization**, few-shot adaptation, or universal representations.  
+> Tagged with **[X-SUBJ]** when cross-subject generalization is a core focus, and **[FM]** when the model is positioned as a more general-purpose brain encoder/decoder.
 
 [X-SUBJ] MindEye2: Shared-Subject Models Enable fMRI-To-Image With 1 Hour of Data  
 [[ICML 2024](https://proceedings.mlr.press/v235/scotti24a.html)] [[arXiv](https://arxiv.org/abs/2403.11207)] [[Project](https://medarc-ai.github.io/mindeye2/)] [[Code](https://github.com/MedARC-AI/MindEyeV2)]
@@ -377,29 +373,8 @@ Balancing Semantic and Structural Decoding for fMRI-to-Image Reconstruction
 [[OpenReview](https://openreview.net/forum?id=fYSPRGmS6l)] [[arXiv](https://arxiv.org/abs/2505.15946)] [[Code](https://github.com/yuxiangwei0808/MoRE-Brain)]
 
 [X-SUBJ] Inter-individual and inter-site neural code conversion without shared stimuli  
-*(A general-purpose cross-subject / cross-site alignment method that can support various decoding tasks beyond visual reconstruction.)*
+*(General-purpose cross-subject / cross-site alignment that can support various decoding tasks beyond visual reconstruction.)*  
 [[Nature Computational Science 2025](https://doi.org/10.1038/s43588-025-00826-5)]
-
----
-
-### 4.5 Interpretability and Concept-Level Decoding
-
-> Brain→Image methods that explicitly emphasize **interpretability, concept-level representations, semantic bottlenecks, or analyzing what generative priors really use from the brain**.
-
-MindReader: Reconstructing complex images from brain activities  
-[[NeurIPS 2022](https://arxiv.org/abs/2209.12951)] [[Code](https://github.com/yuvalsim/MindReader)]
-
-Bridging Brains and Concepts: Interpretable Visual Decoding from fMRI with Semantic Bottlenecks  
-[[NeurIPS 2025 Poster](https://openreview.net/forum?id=K6ijewH34E)] [[PDF](https://openreview.net/pdf?id=K6ijewH34E)]
-
-BrainBits: How Much of the Brain are Generative Reconstruction Methods Using?  
-[[NeurIPS 2024](https://openreview.net/forum?id=KAAUvi4kpb)] [[arXiv](https://arxiv.org/abs/2411.02783)] [[Code](https://github.com/czlwang/BrainBits)]
-
----
-
-### 4.6 Visual-to-fMRI Synthesis and Data Augmentation
-
-> Reverse direction (**image → fMRI / encoding**), often used to **synthesize / augment fMRI data**, or to build universal encoders that support better decoding.
 
 Self-Supervised Natural Image Reconstruction and Large-Scale Semantic Classification from Brain Activity  
 [[NeuroImage 2022](https://www.sciencedirect.com/science/article/pii/S105381192200249X)]
@@ -412,36 +387,78 @@ SynBrain: Enhancing Visual-to-fMRI Synthesis via Probabilistic Representation Le
 
 ---
 
-## 5. Video and Dynamic Scene Decoding
+### 4.4 Interpretability and Concept-Level Decoding
 
-> **Scope:** Methods that decode **dynamic visual experience** from brain activity: videos, continuous frames, or time-varying visual features (typically movie fMRI or other naturalistic video stimuli).
+> Brain→image pipelines that explicitly emphasize **interpretability**, concept-level representations, or analysis of how much information generative priors actually extract from the brain.
 
-### 5.1 Classical and Encoding/Decoding Frameworks for Movies
+MindReader: Reconstructing complex images from brain activities  
+[[NeurIPS 2022](https://arxiv.org/abs/2209.12951)] [[Code](https://github.com/yuvalsim/MindReader)]
 
-Reconstructing visual experiences from brain activity evoked by natural movies  
-[[Current Biology 2011](https://doi.org/10.1016/j.cub.2011.01.031)]
+Bridging Brains and Concepts: Interpretable Visual Decoding from fMRI with Semantic Bottlenecks  
+[[NeurIPS 2025 Poster](https://openreview.net/forum?id=K6ijewH34E)] [[PDF](https://openreview.net/pdf?id=K6ijewH34E)]
 
-Neural encoding and decoding with deep learning for dynamic natural vision  
-[[Cerebral Cortex 2018](https://doi.org/10.1093/cercor/bhx268)]
+BrainBits: How Much of the Brain are Generative Reconstruction Methods Using?  
+[[NeurIPS 2024](https://openreview.net/forum?id=KAAUvi4kpb)] [[arXiv](https://arxiv.org/abs/2411.02783)] [[Code](https://github.com/czlwang/BrainBits)]
 
 ---
 
-### 5.2 Deep Generative fMRI-to-Video Reconstruction
+## 5. Video and Dynamic Scene Decoding
+
+> **Scope:** Decoding **continuous movies / dynamic visual scenes** from brain activity.  
+> Multimodal / LMM-based pipelines that strongly rely on foundation models are also cross-referenced in **§6.2**.
+
+---
+
+### 5.1 Classical Encoding and Semantic Decoding Frameworks for Movies
+
+> Encoding-model and decoding pipelines for natural movies, often predicting voxel responses from visual features and then decoding semantic content or categories.
+
+Reconstructing visual experiences from brain activity evoked by natural movies  
+[[Current Biology 2011](https://www.sciencedirect.com/science/article/pii/S0960982211009377)]
+
+Decoding the Semantic Content of Natural Movies from Human Brain Activity  
+[[Frontiers in Systems Neuroscience 2016](https://www.frontiersin.org/articles/10.3389/fnsys.2016.00081/full)]
+
+Neural encoding and decoding with deep learning for dynamic natural vision  
+[[Cerebral Cortex 2018](https://academic.oup.com/cercor/article/28/12/4136/4560155)]
+
+The Algonauts Project 2021 Challenge: How the Human Brain Makes Sense of a World in Motion  
+*(Benchmark challenge for predicting fMRI responses to >1k short everyday videos.)*  
+[[arXiv 2021](https://arxiv.org/abs/2104.13714)] [[Challenge](http://algonauts.csail.mit.edu/)]
+
+---
+
+### 5.2 Representation-Alignment and Retrieval-Based Video Decoders
+
+> Approaches that map fMRI into a **shared embedding space** (e.g., clip-level or text-level representations) and then perform video **retrieval** or matching, often with the help of multimodal large models.
+
+Mind2Word: Towards Generalized Visual Neural Representations for High-Quality Video Reconstruction  
+– Maps fMRI into a sequence of pseudo-words in a text embedding space, and then uses a video generator for high-quality reconstruction.  
+[[Expert Systems with Applications 2025](https://www.sciencedirect.com/science/article/pii/S095741742502771X)]
+
+Decoding the Moving Mind: Multi-Subject fMRI-to-Video Retrieval with MLLM Semantic Grounding  
+– Multi-subject fMRI-to-video retrieval using multimodal large language models to ground semantic similarity between brain activity and candidate clips.  
+[[bioRxiv 2025](https://www.biorxiv.org/content/10.1101/2025.04.07.647335v1)]
+
+> These works also appear in **§6.2 Video-Oriented and Retrieval-Based Multimodal Decoding**, where their multimodal / foundation-model aspects are emphasized.
+
+---
+
+### 5.3 Deep Generative fMRI-to-Video Reconstruction
+
+> Models that aim to **reconstruct full video sequences** (or high-frame-rate approximations) from fMRI, typically using deep video generators or diffusion models conditioned on brain activity.
 
 Reconstructing rapid natural vision with fMRI-conditional video generative adversarial network  
-[[Cerebral Cortex 2022](https://doi.org/10.1093/cercor/bhab498)]
+[[Cerebral Cortex 2022](https://academic.oup.com/cercor/article/32/20/4502/6515038)]
+
+A Penny for Your (visual) Thoughts: Self-Supervised Reconstruction of Natural Movies from Brain Activity  
+[[arXiv 2022](https://arxiv.org/abs/2206.03544)]
 
 Cinematic Mindscapes: High-quality Video Reconstruction from Brain Activity (Mind-Video)  
-[[NeurIPS 2023 Oral](https://proceedings.neurips.cc/paper_files/paper/2023/hash/4e5e0daf4b05d8bfc6377f33fd53a8f4-Abstract-Conference.html)] [[Project](https://www.mind-video.com/)]
+[[NeurIPS 2023](https://proceedings.neurips.cc/paper_files/paper/2023/file/4e5e0daf4b05d8bfc6377f33fd53a8f4-Paper-Conference.pdf)] [[Project](https://www.mind-video.com/)]
 
-NeuralFlix: Reconstructing Vivid Videos from Human Brain Activity  
-[[arXiv 2024](https://arxiv.org/abs/2402.01590)]
-
-NeuroClips: Towards High-fidelity and Smooth fMRI-to-Video Reconstruction  
-[[NeurIPS 2024](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5c594bf6223b67109441c9e0c97542ed-Paper-Conference.pdf)] [[Code](https://github.com/gongzix/NeuroClips)]
-
-NEURONS: Emulating the Human Visual Cortex Improves Fidelity and Interpretability in fMRI-to-Video Reconstruction  
-[[ICCV 2025](https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Neurons_Emulating_the_Human_Visual_Cortex_Improves_Fidelity_and_Interpretability_ICCV_2025_paper.html)] [[Code](https://github.com/xmed-lab/NEURONS)]
+Animate Your Thoughts: Decoupled Reconstruction of Dynamic Natural Vision from Slow Brain Activity (Mind-Animator)  
+[[ICLR 2025](https://openreview.net/forum?id=BpfsxFqhGa)] [[arXiv](https://arxiv.org/abs/2405.03280)] [[Project](https://mind-animator-design.github.io/)]
 
 ---
 
@@ -454,7 +471,7 @@ NEURONS: Emulating the Human Visual Cortex Improves Fidelity and Interpretabilit
 
 **Language / narrative decoders (see §3.3)**  
 - [FM] BrainLLM – *Generative language reconstruction from brain recordings*  
-  → listed under [§3.3 Generative & LLM-Based Brain-to-Text Decoders (fMRI)](#33-generative--llm-based-brain-to-text-decoders-fmri)  
+  → listed under [§3.3](#33-generative--llm-based-brain-to-text-decoders-fmri)  
 - [FM] BrainDEC – *A Multimodal LLM for the Non-Invasive Decoding of Text from Brain Recordings*  
   → see [§3.3](#33-generative--llm-based-brain-to-text-decoders-fmri)  
 - [FM] [X-SUBJ] MindLLM – *A Subject-Agnostic and Versatile Model for fMRI-to-Text Decoding*  
@@ -468,7 +485,7 @@ NEURONS: Emulating the Human Visual Cortex Improves Fidelity and Interpretabilit
 
 **Visual reconstruction & universal encoders (see §4.4 / §4.6)**  
 - [FM] [X-SUBJ] Psychometry – *An Omnifit Model for Image Reconstruction from Human Brain Activity*  
-  → listed under [§4.4 Cross-Subject and Generalizable Decoding](#44-cross-subject-and-generalizable-decoding)  
+  → listed under [§4.4](#44-cross-subject-and-generalizable-decoding)  
 - [X-SUBJ] MindEye2 – *Shared-Subject Models Enable fMRI-To-Image With 1 Hour of Data*  
   → see [§4.4](#44-cross-subject-and-generalizable-decoding)  
 - [X-SUBJ] ZEBRA – *Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding*  
@@ -476,7 +493,7 @@ NEURONS: Emulating the Human Visual Cortex Improves Fidelity and Interpretabilit
 - [X-SUBJ] NeuroPictor / Wills Aligner / BrainGuard / MoRE-Brain – cross-subject visual decoders and privacy-preserving variants  
   → see [§4.4](#44-cross-subject-and-generalizable-decoding)  
 - [FM] [X-SUBJ] The Wisdom of a Crowd of Brains – *A Universal Brain Encoder*  
-  → listed under [§4.6 Visual-to-fMRI Synthesis and Data Augmentation](#46-visual-to-fmri-synthesis-and-data-augmentation)  
+  → listed under [§4.6](#46-visual-to-fmri-synthesis-and-data-augmentation)  
 - Self-Supervised Natural Image Reconstruction and Large-Scale Semantic Classification from Brain Activity  
   → see [§4.6](#46-visual-to-fmri-synthesis-and-data-augmentation)
 
