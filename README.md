@@ -424,6 +424,8 @@ Reconstructing visual experiences from brain activity evoked by natural movies
 Neural encoding and decoding with deep learning for dynamic natural vision  
 [[Cerebral Cortex 2018](https://doi.org/10.1093/cercor/bhx268)]
 
+---
+
 ### 5.2 Deep Generative fMRI-to-Video Reconstruction
 
 Reconstructing rapid natural vision with fMRI-conditional video generative adversarial network  
@@ -461,6 +463,8 @@ Modality-Agnostic fMRI Decoding of Vision and Language
 Brain Harmony: A Multimodal Foundation Model Unifying Morphology and Function into 1D Tokens  
 [[NeurIPS 2025](https://openreview.net/pdf/80edac1ff79b10252bcd8be5794855fadbd39ea9.pdf)]  [[Code](https://github.com/hzlab/Brain-Harmony)]
 
+---
+
 ### 6.2 Video-Oriented and Retrieval-Based Multimodal Decoding
 
 Mind2Word: Towards Generalized Visual Neural Representations for High-Quality Video Reconstruction  
@@ -491,6 +495,8 @@ Identifying Musical Pieces from fMRI Data Using Encoding and Decoding Models
 
 Capturing the Musical Brain with LASSO: Dynamic Decoding of Musical Features from fMRI Data  
 [[NeuroImage 2014](https://doi.org/10.1016/j.neuroimage.2013.11.017)]
+
+---
 
 ### 7.2 Non-fMRI but Influential Audio / Music Decoding
 
@@ -523,7 +529,7 @@ Advances in Functional Magnetic Resonance Imaging-Based Brain Decoding and Its C
 Machine Learning for Classifying Affective Valence from fMRI: A Systematic Review  
 [[Affective Science 2025](https://link.springer.com/article/10.1007/s44163-025-00377-8)]
 
-
+---
 
 ### 8.2 Cognitive Task and Performance Decoding
 
@@ -540,6 +546,7 @@ Scaling Vision Transformers for Functional MRI with Flat Maps
 *(Provides a scalable ViT-based backbone architecture for a variety of decoding tasks, beyond a single specific paradigm.)*
 [[NeurIPS 2025 (submitted)](link_to_preprint)]
 
+---
 
 ### 8.3 Methodological and Conceptual Perspectives on Mental-State Decoding
 
@@ -591,6 +598,8 @@ Brain2Music implementation
 BrainCodec: neural fMRI codec for cognitive-state decoding  
 [[GitHub](https://github.com/amano-k-lab/BrainCodec)]
 
+---
+
 ### 9.2 Preprocessing, Analysis, and Utility Libraries
 
 fMRIPrep – robust preprocessing pipeline for task / resting-state fMRI  
@@ -618,6 +627,7 @@ NextBrain: A probabilistic histological atlas of the human brain for MRI segment
 *(Provides a high-resolution anatomical prior and segmentation backbone that can benefit fMRI decoding pipelines; see also Section [8.3 Methodological and Conceptual Perspectives on Mental-State Decoding](#83-methodological-and-conceptual-perspectives-on-mental-state-decoding).)*
 [[Nature 2025](https://doi.org/10.1038/s41586-025-09708-2)]
 
+---
 
 ### 9.3 Awesome Lists and Related Curations
 
