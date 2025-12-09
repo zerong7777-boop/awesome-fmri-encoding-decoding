@@ -215,8 +215,11 @@ High-level visual representations in the human brain are aligned with large lang
 
 ### 3.3 Generative & LLM-Based Brain-to-Text Decoders (fMRI)
 
-Language Generation from Human Brain Activities  
-[[CoRR 2023](https://arxiv.org/abs/2311.09889)] [[Code](https://github.com/YeZiyi1998/Brain-language-generation)]
+Towards Brain-to-Text Generation: Neural Decoding with Pre-trained Encoder-Decoder Models
+[[NeurIPS 2021 (AI4Science Workshop](https://openreview.net/forum?id=13IJlk221xG)]
+
+UniCoRN: Unified Cognitive Signal ReconstructioN bridging cognitive signals and human language
+[[ACL 2023](https://aclanthology.org/2023.acl-long.741/)] 
 
 Decoding Continuous Character-based Language from Non-invasive Brain Recordings  
 [[bioRxiv 2024](https://www.biorxiv.org/content/10.1101/2024.03.19.585656v1)] [[arXiv](https://arxiv.org/abs/2403.11183)] [[Dataset](https://openneuro.org/datasets/ds006630)]
@@ -238,6 +241,12 @@ Open-vocabulary Auditory Neural Decoding Using fMRI-prompted LLM (Brain Prompt G
 
 Generative language reconstruction from brain recordings (BrainLLM)  
 [[Communications Biology 2025](https://www.nature.com/articles/s42003-025-07731-7)] [[Code](https://github.com/YeZiyi1998/Brain-language-generation)]
+
+fMRI-LM: Towards a Universal Foundation Model for Multi-Task Brain Decoding
+[[arXiv](https://www.arxiv.org/abs/2511.21760)]
+
+Brain-language fusion enables interactive neural readout and in-silico experimentation (CorText / CorText-AMA)
+[[arXiv](https://arxiv.org/abs/2509.23941)]
 
 ---
 
