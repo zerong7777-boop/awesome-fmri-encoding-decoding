@@ -192,7 +192,14 @@ BOLD Moments Dataset (BMD) – video fMRI responses to ~1k short naturalistic cl
 ## 3. Language / Narrative Decoding (Brain → Text)
 
 > **Scope:** Brain → text decoding, where the output is language (words, sentences, continuous narratives) rather than images, video, or other modalities.  
-> Sections 3.1–3.3 cover **fMRI-based** approaches, grouped by decoding strategy (encoding/candidate-scoring, embedding-space/representation alignment, and generative/LLM-based decoders), while §3.4 collects influential **non-fMRI (EEG/MEG)** brain-to-text works.
+> Sections 3.1–3.3 cover **fMRI-based** approaches, grouped by decoding strategy:
+> - **§3.1** – likelihood-based / **encoding-model + candidate scoring** decoders for a discrete set of words/sentences;
+> - **§3.2** – decoders that map brain activity into **continuous semantic embedding spaces** and perform retrieval or linear decoding;
+> - **§3.3** – **open-vocabulary generative** decoders that use pretrained sequence models / LLMs.
+>
+> We place a work in **§3.1** if it explicitly uses an encoding model to score a discrete candidate set (even if embeddings are used internally).  
+> Works that directly regress to a continuous representation space and then perform retrieval or linear decoding, **without explicit candidate scoring**, are grouped in **§3.2**.  
+> **§3.4** collects influential **non-fMRI (EEG/MEG)** brain-to-text works that are methodologically relevant for non-invasive decoding.
 
 ### 3.1 Encoding-Model & Candidate-Scoring Decoders (fMRI)
 
@@ -236,7 +243,7 @@ High-level visual representations in the human brain are aligned with large lang
 
 ### 3.3 Generative & LLM-Based Brain-to-Text Decoders (fMRI)
 
-Towards Brain-to-Text Generation: Neural Decoding with Pre-trained Encoder-Decoder Models
+Towards Brain-to-Text Generation: Neural Decoding with Pre-trained Encoder-Decoder Models  
 [[NeurIPS 2021 (AI4Science Workshop](https://openreview.net/forum?id=13IJlk221xG)]
 
 [FM] UniCoRN: Unified Cognitive Signal ReconstructioN bridging cognitive signals and human language  
@@ -271,7 +278,7 @@ Open-vocabulary Auditory Neural Decoding Using fMRI-prompted LLM (Brain Prompt G
 
 ---
 
-### 3.4 Non-fMRI but Influential Brain-to-Text
+### 3.4 Non-fMRI but Influential Brain-to-Text Decoding
 
 [X-SUBJ] Decoding speech perception from non-invasive brain recordings *(MEG/EEG contrastive decoding of perceived speech, strong reference for non-invasive language decoding)*  
 [[Nature Machine Intelligence 2023](https://www.nature.com/articles/s42256-023-00714-5)] [[Code](https://github.com/facebookresearch/brainmagick)]
@@ -283,12 +290,13 @@ Open-vocabulary Auditory Neural Decoding Using fMRI-prompted LLM (Brain Prompt G
 [[arXiv 2025](https://arxiv.org/abs/2502.17480)] [[Project page](https://ai.meta.com/research/publications/brain-to-text-decoding-a-non-invasive-approach-via-typing/)]
 
 
-
 ---
 
 ## 4. Visual Image Reconstruction (Brain → Image)
 
 > **Scope:** Static image reconstruction from brain activity (mostly fMRI).  
+> Subsections **4.1–4.2** are organized by the main **image prior** (pre-deep vs deep generative models), while **4.3–4.4** cut across these backbones to highlight **cross-subject / universal decoders** and **interpretability / concept-level analyses**.  
+> Some works naturally fit multiple views (e.g., diffusion-based and cross-subject); we cross-reference them via tags such as **[FM]** and **[X-SUBJ]** rather than duplicating full entries.
 
 ---
 
@@ -343,7 +351,8 @@ Balancing Semantic and Structural Decoding for fMRI-to-Image Reconstruction
 ### 4.3 Cross-Subject and Universal Visual Decoders / Encoders
 
 > Brain→image decoders and image→fMRI encoders that explicitly target **cross-subject / cross-site generalization**, few-shot adaptation, or universal representations.  
-> Tagged with **[X-SUBJ]** when cross-subject generalization is a core focus, and **[FM]** when the model is positioned as a more general-purpose brain encoder/decoder.
+> Tagged with **[X-SUBJ]** when cross-subject generalization is a core focus, and **[FM]** when the model is positioned as a more general-purpose brain encoder/decoder.  
+> Some of these also belong conceptually to §4.2 (diffusion-based reconstruction) or §6 (foundation-style encoders); we list them here when **population-level modeling** is a central contribution.
 
 [X-SUBJ] MindEye2: Shared-Subject Models Enable fMRI-To-Image With 1 Hour of Data  
 [[ICML 2024](https://proceedings.mlr.press/v235/scotti24a.html)] [[arXiv](https://arxiv.org/abs/2403.11207)] [[Project](https://medarc-ai.github.io/mindeye2/)] [[Code](https://github.com/MedARC-AI/MindEyeV2)]
@@ -383,7 +392,7 @@ SynBrain: Enhancing Visual-to-fMRI Synthesis via Probabilistic Representation Le
 
 ### 4.4 Interpretability and Concept-Level Decoding
 
-> Brain→image pipelines that explicitly emphasize **interpretability**, concept-level representations, or analysis of how much information generative priors actually extract from the brain.
+> Brain→image pipelines that explicitly emphasize **interpretability**, concept-level representations, or analysis of how much information generative priors actually extract from the brain (e.g., concept bottlenecks, probing, attribution analyses).
 
 MindReader: Reconstructing complex images from brain activities  
 [[NeurIPS 2022](https://arxiv.org/abs/2209.12951)] [[Code](https://github.com/yuvalsim/MindReader)]
@@ -394,12 +403,14 @@ Bridging Brains and Concepts: Interpretable Visual Decoding from fMRI with Seman
 BrainBits: How Much of the Brain are Generative Reconstruction Methods Using?  
 [[NeurIPS 2024](https://openreview.net/forum?id=KAAUvi4kpb)] [[arXiv](https://arxiv.org/abs/2411.02783)] [[Code](https://github.com/czlwang/BrainBits)]
 
+
 ---
 
 ## 5. Video and Dynamic Scene Decoding
 
 > **Scope:** Decoding **continuous movies / dynamic visual scenes** from brain activity.  
-> Multimodal / LMM-based pipelines that strongly rely on foundation models are also cross-referenced in **§6.2**.
+> This includes **movie encoding/decoding frameworks** and feature-based models, **representation-alignment and retrieval-based decoders**, and **deep generative fMRI-to-video reconstruction**.  
+> Video-oriented pipelines that heavily rely on **multimodal LMMs / foundation models** are cross-referenced in **§6.2**, while works focusing on higher-level **affect or cognitive state trajectories** induced by movies are mostly indexed in **§8**.
 
 ---
 
@@ -455,46 +466,67 @@ Animate Your Thoughts: Decoupled Reconstruction of Dynamic Natural Vision from S
 
 ## 6. Multimodal and Foundation-Model-based Decoding
 
-> **Scope:** Methods that treat brain activity as one modality inside **large pretrained models** (e.g., CLIP, Stable Diffusion, VLMs, LMMs), and/or build **foundation-style brain encoders** that work across tasks, datasets, or modalities.  
-> This section is method-oriented and serves mainly as an **index**: most concrete models are listed under task-specific sections (§3–§5) and tagged with [FM] / [X-SUBJ].
+> **Scope:** Methods that treat brain activity as one modality inside **large pretrained models** (CLIP, Stable Diffusion, VLMs, LMMs, etc.) and/or build **foundation-style brain encoders** designed to work across tasks, datasets, or modalities.  
+> We list a work here if (i) a large pretrained model is **central** to the decoding pipeline, and (ii) the model is explicitly **multi-task**, **multimodal**, or **subject-/dataset-agnostic** beyond a single specific task.  
+> This section is **method-oriented** and mainly serves as a **second index**: concrete models remain organized under modality-specific sections (§3–§5) and are tagged with [FM] / [X-SUBJ].
 
-### 6.1 Index of Foundation-Style Brain Decoders in §§3–4
+### 6.1 Unified Vision–Language / Multimodal Decoders
+
+> Subsection 6.1 groups **foundation-style brain decoders** that unify multiple output modalities (e.g., images + text) or tasks within one model.  
+> The entries below are **indexed here** from §§3–4; please refer to those sections for task-specific context and details.
 
 **Language / narrative decoders (see §3.3)**  
+
 - [FM] BrainLLM – *Generative language reconstruction from brain recordings*  
   → listed under [§3.3](#33-generative--llm-based-brain-to-text-decoders-fmri)  
+
 - [FM] BrainDEC – *A Multimodal LLM for the Non-Invasive Decoding of Text from Brain Recordings*  
   → see [§3.3](#33-generative--llm-based-brain-to-text-decoders-fmri)  
+
 - [FM] [X-SUBJ] MindLLM – *A Subject-Agnostic and Versatile Model for fMRI-to-Text Decoding*  
   → see [§3.3](#33-generative--llm-based-brain-to-text-decoders-fmri)  
+
 - [FM] UniCoRN – *Unified Cognitive Signal ReconstructioN bridging cognitive signals and human language*  
   → see [§3.3](#33-generative--llm-based-brain-to-text-decoders-fmri)  
+
 - [FM] fMRI-LM – *Towards a Universal Foundation Model for Multi-Task Brain Decoding*  
   → see [§3.3](#33-generative--llm-based-brain-to-text-decoders-fmri)  
+
 - [FM] Brain-language fusion (CorText / CorText-AMA) – *interactive neural readout and in-silico experimentation with LLMs*  
   → see [§3.3](#33-generative--llm-based-brain-to-text-decoders-fmri)
 
-**Visual reconstruction & universal encoders (see §4.4 / §4.6)**  
-- [FM] [X-SUBJ] Psychometry – *An Omnifit Model for Image Reconstruction from Human Brain Activity*  
-  → listed under [§4.4](#44-cross-subject-and-generalizable-decoding)  
-- [X-SUBJ] MindEye2 – *Shared-Subject Models Enable fMRI-To-Image With 1 Hour of Data*  
-  → see [§4.4](#44-cross-subject-and-generalizable-decoding)  
-- [X-SUBJ] ZEBRA – *Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding*  
-  → see [§4.4](#44-cross-subject-and-generalizable-decoding)  
-- [X-SUBJ] NeuroPictor / Wills Aligner / BrainGuard / MoRE-Brain – cross-subject visual decoders and privacy-preserving variants  
-  → see [§4.4](#44-cross-subject-and-generalizable-decoding)  
-- [FM] [X-SUBJ] The Wisdom of a Crowd of Brains – *A Universal Brain Encoder*  
-  → listed under [§4.6](#46-visual-to-fmri-synthesis-and-data-augmentation)  
-- Self-Supervised Natural Image Reconstruction and Large-Scale Semantic Classification from Brain Activity  
-  → see [§4.6](#46-visual-to-fmri-synthesis-and-data-augmentation)
 
-> For task-specific details and links, please refer to the corresponding sections (§3–§4). This subsection only groups them by **foundation-style / cross-subject** perspective.
+**Visual reconstruction & universal encoders (see §4.3–§4.4)**  
+
+- [FM] [X-SUBJ] Psychometry – *An Omnifit Model for Image Reconstruction from Human Brain Activity*  
+  → listed under [§4.3](#43-cross-subject-and-universal-visual-decoders--encoders)  
+
+- [X-SUBJ] MindEye2 – *Shared-Subject Models Enable fMRI-To-Image With 1 Hour of Data*  
+  → see [§4.3](#43-cross-subject-and-universal-visual-decoders--encoders)  
+
+- [X-SUBJ] ZEBRA – *Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding*  
+  → see [§4.3](#43-cross-subject-and-universal-visual-decoders--encoders)  
+
+- [X-SUBJ] NeuroPictor / Wills Aligner / BrainGuard / MoRE-Brain – cross-subject visual decoders and privacy-preserving or MoE-based variants  
+  → see [§4.3](#43-cross-subject-and-universal-visual-decoders--encoders)  
+
+- [FM] [X-SUBJ] The Wisdom of a Crowd of Brains – *A Universal Brain Encoder*  
+  → listed under [§4.3](#43-cross-subject-and-universal-visual-decoders--encoders)  
+
+- Self-Supervised Natural Image Reconstruction and Large-Scale Semantic Classification from Brain Activity  
+  → see [§4.3](#43-cross-subject-and-universal-visual-decoders--encoders)  
+
+- SynBrain – *Enhancing Visual-to-fMRI Synthesis via Probabilistic Representation Learning*  
+  → see [§4.3](#43-cross-subject-and-universal-visual-decoders--encoders)  
+
+> For task-specific details and links, please refer back to the corresponding sections (§3–§4). Here we group them by their **foundation-style / cross-subject** perspective.
 
 ---
 
-### 6.2 Explicit Multimodal / Vision–Language–Video Decoders (not fully covered elsewhere)
+### 6.2 Video-Oriented and Retrieval-Based Multimodal Decoding
 
-> Models that explicitly use **vision–language / multimodal foundation models** (CLIP, VLMs, LMMs) and do not fit cleanly into a single output-modality section.
+> Models that explicitly use **vision–language / multimodal foundation models** (CLIP, VLMs, LMMs) and do not fit cleanly into a single output-modality section.  
+> Many of these bridge **video reconstruction / retrieval** with **textual or conceptual grounding**, and so are cross-referenced with §5.
 
 [FM] [X-SUBJ] UMBRAE: Unified Multimodal Brain Decoding  
 – Unified decoder that aligns fMRI with CLIP-like multimodal representations, supporting image, text, and category decoding within one framework.  
@@ -520,7 +552,7 @@ Decoding the Moving Mind: Multi-Subject fMRI-to-Video Retrieval with MLLM Semant
 – Multi-subject fMRI-to-video retrieval using multimodal LLMs to ground semantic similarity between brain activity and candidate clips.  
 [[bioRxiv 2025](https://www.biorxiv.org/content/10.1101/2025.04.07.647335v1)]
 
-> For additional video-focused methods that do not rely on multimodal LMMs, see **§5. Video and Dynamic Scene Decoding**.
+> For additional video-focused methods that **do not** rely heavily on multimodal LMMs or foundation models, see **§5. Video and Dynamic Scene Decoding**.
 
 ---
 
