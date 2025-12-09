@@ -7,7 +7,7 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 ---
 
 ## Contents
-
+- [0. Tag legend](#0-Tag-legend)
 - [1. Surveys and Overviews](#1-surveys-and-overviews)
   - [1.1 Visual and Multimodal fMRI Decoding & Reconstruction](#11-visual-and-multimodal-fmri-decoding--reconstruction)
   - [1.2 Language and Narrative Neural Decoding](#12-language-and-narrative-neural-decoding)
@@ -50,8 +50,7 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 - [10. Contributing](#10-contributing)
 
 ---
-## 0.
-**Tag legend (optional shortcuts):**
+## 0. Tag legend
 
 - [FM] foundation-style / multi-task / subject-agnostic models
 - [X-SUBJ] explicit cross-subject / subject-agnostic decoders
