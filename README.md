@@ -7,7 +7,7 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 ---
 
 ## Contents
-- [0. Tag legend](#0-Tag-legend)
+- [0. Tag legend](#0-tag-legend)
 - [1. Surveys and Overviews](#1-surveys-and-overviews)
   - [1.1 Visual and Multimodal fMRI Decoding & Reconstruction](#11-visual-and-multimodal-fmri-decoding--reconstruction)
   - [1.2 Language and Narrative Neural Decoding](#12-language-and-narrative-neural-decoding)
@@ -22,7 +22,7 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
   - [3.1 Encoding-Model & Candidate-Scoring Decoders (fMRI)](#31-encoding-model--candidate-scoring-decoders-fmri)
   - [3.2 Representation-Alignment & Embedding-Space Decoders (fMRI)](#32-representation-alignment--embedding-space-decoders-fmri)
   - [3.3 Generative & LLM-Based Brain-to-Text Decoders (fMRI)](#33-generative--llm-based-brain-to-text-decoders-fmri)
-  - [3.4 Non-fMRI but Influential Brain-to-Text](#34-non-fmri-but-influential-brain-to-text)
+  - [3.4 Non-fMRI but Influential Brain-to-Text Decoding](#34-non-fmri-but-influential-brain-to-text-decoding)
 - [4. Visual Image Reconstruction (Brain → Image)](#4-visual-image-reconstruction-brain--image)
   - [4.1 Classical and Pre-Deep-Learning Reconstruction](#41-classical-and-pre-deep-learning-reconstruction)
   - [4.2 Deep Generative Reconstruction with Learned Image Priors](#42-deep-generative-reconstruction-with-learned-image-priors)
@@ -48,6 +48,7 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
   - [9.2 Preprocessing, Analysis, and Utility Libraries](#92-preprocessing-analysis-and-utility-libraries)
   - [9.3 Awesome Lists and Related Curations](#93-awesome-lists-and-related-curations)
 - [10. Contributing](#10-contributing)
+
 
 
 ---
@@ -596,7 +597,6 @@ Decoding Reveals the Neural Representation of Perceived and Imagined Musical Sou
 ## 8. Mental-State, Cognitive, and Clinical Decoding (Cross-Modality)
 
 > **Scope:** fMRI-based decoding of **mental states** (emotion, affect, spontaneous thought, cognitive performance) and **clinically relevant phenotypes** (diagnosis, risk, progression), plus methodological work that directly targets mental-state decoding.  
-> 与第 3–7 节的“按刺激 / 输出模态”分类互补，本节沿着 **[AFFECT]/[COG]/[CLINICAL] tag** 做一个跨模态综览。
 
 ### 8.1 Affective and Emotion State Decoding  [AFFECT]
 
