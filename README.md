@@ -706,7 +706,6 @@ bdpy – Brain Decoder Toolbox in Python
 [[GitHub](https://github.com/KamitaniLab/bdpy)]
 
 NextBrain: A probabilistic histological atlas of the human brain for MRI segmentation 
-*(Provides a high-resolution anatomical prior and segmentation backbone that can benefit fMRI decoding pipelines; see also Section [8.3 Methodological and Conceptual Perspectives on Mental-State Decoding](#83-methodological-and-conceptual-perspectives-on-mental-state-decoding).)*
 [[Nature 2025](https://doi.org/10.1038/s41586-025-09708-2)]
 
 ---
