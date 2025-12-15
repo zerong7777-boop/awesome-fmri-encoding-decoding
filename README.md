@@ -724,7 +724,6 @@ Awesome Brain Graph Learning with GNNs
 Awesome Neuroimaging in Python (nibabel, nilearn, MNE, etc.)  
 [[GitHub](https://github.com/ofgulban/awesome-neuroimaging-in-python)]
 
-*(You can further extend this section with visualization tools, BIDS utilities, and more decoding-specific codebases as the ecosystem grows.)*
 
 ---
 
