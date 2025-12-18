@@ -4,6 +4,7 @@ A curated list of fMRI-centric **encoding models, decoding frameworks, and repre
 
 If you find this repo helpful, please give it a ⭐ and consider contributing new papers via pull requests.
 
+**Last Update: 2025 Dec.18**
 ---
 
 ## Contents
