@@ -4,7 +4,7 @@ A curated list of fMRI-centric **encoding models, decoding frameworks, and repre
 
 If you find this repo helpful, please give it a ⭐ and consider contributing new papers via pull requests.
 
-**Last Update: 2026 Apr.21**
+**Last Update: 2026 Jun.26**
 ---
 
 ## Contents
@@ -220,6 +220,9 @@ How Many Bytes Can You Take Out Of Brain-To-Text Decoding?
 Mind captioning: Evolving descriptive text of mental content from human brain activity
 [[Science Advances 2025](https://www.science.org/doi/10.1126/sciadv.adw1464)] [[Code](https://github.com/horikawa-t/MindCaptioning)] [[OpenNeuro ds005191](https://openneuro.org/datasets/ds005191)]
 
+Interpretable fMRI Captioning via Contrastive Learning [ALIGN]
+[[MICCAI 2025](https://papers.miccai.org/miccai-2025/0459-Paper2049.html)]
+
 
 ---
 
@@ -348,6 +351,18 @@ NeuralDiffuser: Neuroscience-Inspired Diffusion Guidance for fMRI Visual Reconst
 Balancing Semantic and Structural Decoding for fMRI-to-Image Reconstruction
 [[Expert Systems with Applications 2025](https://www.sciencedirect.com/science/article/abs/pii/S0957417425034517)]
 
+Towards Interpretable Visual Decoding with Attention to Brain Representations [GEN]
+[[ICLR 2026](https://openreview.net/forum?id=YWlYITAhMC)]
+
+Seeing Through the Brain: New Insights from Decoding Visual Stimuli with fMRI [GEN] [ALIGN]
+[[ICLR 2026](https://openreview.net/forum?id=88ZLp7xYxw)]
+
+Moving Beyond Diffusion: Hierarchy-to-Hierarchy Autoregression for fMRI-to-Image Reconstruction [GEN] [ALIGN]
+[[ICLR 2026](https://openreview.net/forum?id=AT7hCh6HB7)]
+
+MIRAGE: Robust multi-modal architectures translate fMRI-to-image models from vision to mental imagery [GEN] [ALIGN]
+[[arXiv 2026](https://arxiv.org/abs/2605.17198)]
+
 ---
 
 **Cross-subject and universal visual decoders / encoders**
@@ -393,6 +408,18 @@ Self-Supervised Natural Image Reconstruction and Large-Scale Semantic Classifica
 SynBrain: Enhancing Visual-to-fMRI Synthesis via Probabilistic Representation Learning
 [[arXiv 2025](https://arxiv.org/abs/2508.10298)] [[NeurIPS 2025](https://openreview.net/forum?id=ZTHYaSxqmq)]
 
+Beyond Grid-Locked Voxels: Neural Response Functions for Continuous Brain Encoding [ALIGN] [X-SUBJ]
+[[ICLR 2026](https://openreview.net/forum?id=wBKXuuLZbc)]
+
+Brain-IT: Image Reconstruction from fMRI via Brain-Interaction Transformer [GEN] [X-SUBJ]
+[[ICLR 2026](https://openreview.net/forum?id=9KjXqkfbPw)]
+
+StableMind: Source-Free Cross-Subject fMRI Decoding with Regularized Adaptation [ALIGN] [X-SUBJ]
+[[arXiv 2026](https://arxiv.org/abs/2605.02586)]
+
+NeurIPS: Neuro-anatomical Inductive Priors for Sphere-based Brain Decoding [ALIGN] [X-SUBJ]
+[[arXiv 2026](https://arxiv.org/abs/2605.24993)]
+
 ---
 
 **Interpretability and concept-level decoding**
@@ -407,6 +434,9 @@ Bridging Brains and Concepts: Interpretable Visual Decoding from fMRI with Seman
 
 BrainBits: How Much of the Brain are Generative Reconstruction Methods Using?
 [[NeurIPS 2024](https://openreview.net/forum?id=KAAUvi4kpb)] [[arXiv](https://arxiv.org/abs/2411.02783)] [[Code](https://github.com/czlwang/BrainBits)]
+
+Neuro-Symbolic Decoding of Neural Activity [ALIGN]
+[[ICLR 2026](https://openreview.net/forum?id=alEx0sm74l)]
 
 
 ---
@@ -430,6 +460,12 @@ Neural encoding and decoding with deep learning for dynamic natural vision
 The Algonauts Project 2021 Challenge: How the Human Brain Makes Sense of a World in Motion
 *(Benchmark challenge for predicting fMRI responses to >1k short everyday videos.)*
 [[arXiv 2021](https://arxiv.org/abs/2104.13714)] [[Challenge](http://algonauts.csail.mit.edu/)]
+
+TRIBE: TRImodal Brain Encoder for whole-brain fMRI response prediction [ALIGN]
+[[ICLR 2026](https://openreview.net/forum?id=biegtqdqmg)]
+
+MIRAGE: Adaptive Multimodal Gating for Whole-Brain fMRI Encoding [ALIGN]
+[[arXiv 2026](https://arxiv.org/abs/2605.29850)]
 
 ---
 
@@ -466,6 +502,12 @@ Animate Your Thoughts: Decoupled Reconstruction of Dynamic Natural Vision from S
 
 NeuroClips: Towards High-fidelity and Smooth fMRI-to-Video Reconstruction [GEN]
 [[NeurIPS 2024](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5c594bf6223b67109441c9e0c97542ed-Abstract-Conference.html)] [[Code](https://github.com/gongzix/NeuroClips)]
+
+A Cognitive Process-Inspired Architecture for Subject-Agnostic Brain Visual Decoding [GEN] [ALIGN] [X-SUBJ]
+[[ICLR 2026](https://openreview.net/forum?id=H1GLFKk0xE)]
+
+Bridging Brain and Semantics: A Hierarchical Framework for Semantically Enhanced fMRI-to-Video Reconstruction [GEN] [ALIGN]
+[[arXiv 2026](https://arxiv.org/abs/2605.14569)]
 
 ---
 
@@ -524,6 +566,9 @@ Brain Decoding of the Human Connectome Project Tasks in a Dense Individual fMRI 
 Probabilistic Cognitive State Modeling (PCSM): Decoding dynamic brain states to derive emergent cognitive processing properties from task fMRI
 [[NeuroImage 2026](https://www.sciencedirect.com/science/article/pii/S1053811926001254)] [[DOI](https://doi.org/10.1016/j.neuroimage.2026.121807)]
 
+CBrain: Cross-Modal Learning for Brain Vigilance Detection in Resting-State fMRI [ALIGN]
+[[MICCAI 2025](https://papers.miccai.org/miccai-2025/0138-Paper4486.html)]
+
 Real-time decoding of covert attention in higher-order visual areas
 [[NeuroImage 2018](https://www.sciencedirect.com/science/article/pii/S105381191731042X)] [[DOI](https://doi.org/10.1016/j.neuroimage.2017.12.019)]
 
@@ -559,6 +604,9 @@ Decoding dynamic brain networks in Parkinson's disease with temporal attention
 GraSTI-ACL: Graph spatial-temporal infomax with adversarial contrastive learning for brain disorders diagnosis based on resting-state fMRI
 [[Medical Image Analysis 2026](https://www.sciencedirect.com/science/article/pii/S1361841525003615)] [[DOI](https://doi.org/10.1016/j.media.2025.103815)]
 
+Foundation-Model-Boosted Multimodal Learning for fMRI-based Neuropathic Pain Drug Response Prediction [ALIGN]
+[[MICCAI 2025](https://papers.miccai.org/miccai-2025/0349-Paper1399.html)]
+
 *(See also Section 2.2 for large-scale clinical, psychiatric, developmental, and disease cohorts used as downstream benchmarks.)*
 
 ---
@@ -589,6 +637,21 @@ Modality-Agnostic fMRI Decoding of Vision and Language [ALIGN]
 
 Brain Harmony: A Multimodal Foundation Model Unifying Morphology and Function into 1D Tokens [X-SUBJ]
 [[NeurIPS 2025](https://openreview.net/pdf/80edac1ff79b10252bcd8be5794855fadbd39ea9.pdf)] [[Code](https://github.com/hzlab/Brain-Harmony)]
+
+Orthogonal Contrastive Learning for Multi-Representation fMRI Analysis [ALIGN] [X-SUBJ]
+[[NeurIPS 2025](https://papers.nips.cc/paper_files/paper/2025/hash/a81a1eabfb6cbece73ddd0e6a1645d67-Abstract-Conference.html)]
+
+Brain-Semantoks: Learning Semantic Tokens of Brain Dynamics with a Self-Distilled Foundation Model [ALIGN]
+[[ICLR 2026](https://openreview.net/forum?id=ANkm27vNuk)]
+
+Stochastic Optimal Control for Continuous-Time fMRI Representation Learning [ALIGN]
+[[ICLR 2026](https://openreview.net/forum?id=N51nP3TBwR)]
+
+FlexiBrain: Resolution-Agnostic Voxel-Level Encoding for Native fMRI [ALIGN]
+[[arXiv 2026](https://arxiv.org/abs/2606.11500)]
+
+Omni-fMRI: A Universal Atlas-Free fMRI Foundation Model [ALIGN]
+[[arXiv 2026](https://arxiv.org/abs/2601.23090)]
 
 ---
 ## 10. Toolboxes / Libraries / Related Lists
