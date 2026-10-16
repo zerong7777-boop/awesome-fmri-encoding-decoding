@@ -337,7 +337,7 @@ Reconstructing the Mind's Eye: fMRI-to-Image with Contrastive Learning and Diffu
 [[NeurIPS 2023](https://arxiv.org/abs/2305.18274)] [[Project](https://medarc-ai.github.io/mindeye/)] [[Code](https://github.com/MedARC-AI/fMRI-reconstruction-NSD)]
 
 MindDiffuser: Controlled Image Reconstruction from Human Brain Activity with Semantic and Structural Diffusion
-[[ACM MM 2023](https://dl.acm.org/doi/10.1145/3581783.3613819)] [[arXiv](https://arxiv.org/abs/2308.04249)] [[Code](https://github.com/YingxingLu/MindDiffuser)]
+[[ACM MM 2023](https://dl.acm.org/doi/10.1145/3581783.3613819)] [[arXiv](https://arxiv.org/abs/2308.04249)]
 
 Dual-Guided Brain Diffusion Model: Natural Image Reconstruction from Human Visual Stimulus fMRI (DBDM)
 [[Bioengineering 2023](https://www.mdpi.com/2306-5354/10/10/1117)]
@@ -427,7 +427,7 @@ NeurIPS: Neuro-anatomical Inductive Priors for Sphere-based Brain Decoding [ALIG
 > Brain->image pipelines that explicitly emphasize **interpretability**, concept-level representations, or analysis of how much information generative priors actually extract from the brain (e.g., concept bottlenecks, probing, attribution analyses).
 
 MindReader: Reconstructing complex images from brain activities
-[[NeurIPS 2022](https://arxiv.org/abs/2209.12951)] [[Code](https://github.com/yuvalsim/MindReader)]
+[[NeurIPS 2022](https://arxiv.org/abs/2209.12951)]
 
 Bridging Brains and Concepts: Interpretable Visual Decoding from fMRI with Semantic Bottlenecks
 [[NeurIPS 2025 Poster](https://openreview.net/forum?id=K6ijewH34E)] [[PDF](https://openreview.net/pdf?id=K6ijewH34E)]
@@ -688,7 +688,7 @@ BrainCLIP implementation
 [[GitHub](https://github.com/YulongBonjour/BrainCLIP)]
 
 Brain2Music implementation
-[[GitHub](https://github.com/google-research/google-research/tree/master/brain2music)]
+[[Project](https://google-research.github.io/seanet/brain2music/)]
 
 BrainCodec: neural fMRI codec for cognitive-state decoding
 [[GitHub](https://github.com/amano-k-lab/BrainCodec)]
@@ -740,8 +740,6 @@ Awesome Brain Encoding & Decoding
 Awesome Brain Graph Learning with GNNs
 [[GitHub](https://github.com/XuexiongLuoMQ/Awesome-Brain-Graph-Learning-with-GNNs)]
 
-Awesome Neuroimaging in Python (nibabel, nilearn, MNE, etc.)
-[[GitHub](https://github.com/ofgulban/awesome-neuroimaging-in-python)]
 
 
 ---
