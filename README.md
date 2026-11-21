@@ -4,7 +4,8 @@ A curated list of fMRI-centric **encoding models, decoding frameworks, and repre
 
 If you find this repo helpful, please give it a ⭐ and consider contributing new papers via pull requests.
 
-**Last Update: 2026 Jun.26**
+**Last Update: 2026 Nov. 21**
+
 ---
 
 ## Contents
@@ -28,6 +29,7 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
   - [8.1 Clinical / Disease](#81-clinical--disease)
 - [9. Cross-cutting Methods](#9-cross-cutting-methods)
   - [9.1 Foundation / Multimodal / Cross-subject](#91-foundation--multimodal--cross-subject)
+  - [9.2 Encoding, Representational Analysis, and Evaluation](#92-encoding-representational-analysis-and-evaluation)
 - [10. Toolboxes / Libraries / Related Lists](#10-toolboxes--libraries--related-lists)
   - [10.1 Toolboxes / Libraries](#101-toolboxes--libraries)
   - [10.2 Related Lists](#102-related-lists)
@@ -128,6 +130,10 @@ BOLD5000 – slow event-related fMRI dataset for ~5k images drawn from COCO / Im
 Deep Image Reconstruction (DIR) dataset – single-subject fMRI for natural images used in the Kamitani deep image reconstruction work.
 [[PLoS Comput Biol 2019](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006633)] [[OpenNeuro ds001506](https://openneuro.org/datasets/ds001506)]
 
+AVID: A 5T fMRI Dataset for Benchmarking Auditory-induced Visual Mental Imagery Decoding
+*(5T fMRI benchmark for visual imagery prompted by spoken descriptions.)*
+[[NeurIPS 2026 (accepted poster)](https://neurips.cc/virtual/2026/poster/139564)] [[arXiv](https://arxiv.org/abs/2611.02593)] [[Project](https://github.com/lishurui0612/AVID-benchmark)]
+
 ---
 
 **Language and narrative datasets**
@@ -141,9 +147,17 @@ Semantic reconstruction of continuous language – dataset used in the Nature Ne
 Natural language fMRI dataset for voxelwise encoding models – five multi-session natural-language listening datasets for voxelwise encoding.
 [[Scientific Data 2023](https://www.nature.com/articles/s41597-023-02437-z)] [[GitHub](https://github.com/HuthLab/deep-fMRI-dataset)]
 
+Cephalonauts One: A deep fMRI dataset for decoding naturalistic speech in the human brain
+*(Repeated podcast-listening fMRI sessions with a held-out audio segment retrieval benchmark.)*
+[[NeurIPS 2026 (accepted poster)](https://neurips.cc/virtual/2026/poster/139123)] [[Data](https://huggingface.co/datasets/karavela/cephalonauts_one)]
+
 ---
 
 **Video, affective, and multimodal naturalistic datasets**
+
+CineBrain: A Large-Scale Multi-Modal Audiovisual Brain Dataset for Brain-Conditioned Video Generation
+*(Synchronized fMRI and EEG during naturalistic audiovisual viewing, with the CineSync video reconstruction baseline.)*
+[[CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Gao_CineBrain_A_Large-Scale_Multi-Modal_Audiovisual_Brain_Dataset_for_Brain-Conditioned_Video_CVPR_2026_paper.html)] [[Project](https://jianxgao.github.io/CineBrain/)]
 
 BOLD Moments Dataset (BMD) – video fMRI responses to ~1k short naturalistic clips with rich object / action / text metadata.
 [[Nature Communications 2024](https://www.nature.com/articles/s41467-024-50310-3)] [[OpenNeuro ds005165](https://openneuro.org/datasets/ds005165)] [[Code](https://github.com/blahner/BOLDMomentsDataset)]
@@ -250,6 +264,13 @@ High-level visual representations in the human brain are aligned with large lang
 
 **Generative and LLM-based decoders**
 
+BIT-LLM: Brain Instruction Tuned LLM with persistent Cross-Attention for fMRI-to-Text Decoding [GEN] [ALIGN] [X-SUBJ]
+*(Generates captions for viewed images and tests reliance on the fMRI input with perturbation controls.)*
+[[ICML 2026](https://proceedings.mlr.press/v306/lee26v.html)]
+
+Language Reconstruction with Brain Predictive Coding from fMRI Data [GEN]
+[[ACL 2026](https://aclanthology.org/2026.acl-long.949/)]
+
 Towards Brain-to-Text Generation: Neural Decoding with Pre-trained Encoder-Decoder Models
 [[NeurIPS 2021 (AI4Science Workshop)](https://openreview.net/forum?id=13IJlk221xG)]
 
@@ -277,9 +298,6 @@ Open-vocabulary Auditory Neural Decoding Using fMRI-prompted LLM (Brain Prompt G
 [GEN] Generative language reconstruction from brain recordings (BrainLLM)
 [[Communications Biology 2025](https://www.nature.com/articles/s42003-025-07731-7)] [[Code](https://github.com/YeZiyi1998/Brain-language-generation)]
 
-[X-SUBJ] fMRI-LM: Towards a Universal Foundation Model for Multi-Task Brain Decoding
-[[arXiv](https://www.arxiv.org/abs/2511.21760)]
-
 Brain-language fusion enables interactive neural readout and in-silico experimentation (CorText / CorText-AMA)
 [[arXiv](https://arxiv.org/abs/2509.23941)]
 
@@ -301,7 +319,7 @@ Brain-language fusion enables interactive neural readout and in-silico experimen
 
 ## 4. Brain->Image
 
-> **Scope:** Static visual reconstruction, visual semantic decoding, cross-subject visual decoders, and concept-level visual analysis from fMRI. Generative, alignment, and cross-subject variants are tagged rather than split into separate method sections.
+> **Scope:** Visual encoding, static visual reconstruction, visual semantic decoding, and concept-level visual analysis. Tags identify generative, alignment, and cross-subject methods.
 
 ---
 
@@ -363,6 +381,12 @@ Moving Beyond Diffusion: Hierarchy-to-Hierarchy Autoregression for fMRI-to-Image
 MIRAGE: Robust multi-modal architectures translate fMRI-to-image models from vision to mental imagery [GEN] [ALIGN]
 [[arXiv 2026](https://arxiv.org/abs/2605.17198)]
 
+Follow-Your-Mind: Towards Inversion-Free Brain-Driven Visual Context Synthesis and Editing [GEN] [ALIGN]
+[[ECCV 2026 (official poster)](https://eccv.ecva.net/virtual/2026/poster/3632)] [[PDF](https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/2275.pdf)]
+
+Single-Stage fMRI-to-3D Reconstruction via Viewpoint-Aware Embedding and Hierarchical Guidance [GEN]
+[[AAAI 2026](https://ojs.aaai.org/index.php/AAAI/article/view/38864)]
+
 ---
 
 **Cross-subject and universal visual decoders / encoders**
@@ -381,7 +405,7 @@ MindAligner: Explicit Brain Functional Alignment for Cross-Subject Visual Decodi
 [[NeurIPS 2025](https://openreview.net/pdf/7a4f583ef54685490be5c58986a3ad803aac087c.pdf)] [[Code](https://github.com/xmed-lab/ZEBRA)]
 
 Psychometry [GEN] [X-SUBJ]: An Omnifit Model for Image Reconstruction from Human Brain Activity
-[[CVPR 2024](https://openaccess.thecvf.com/content/CVPR2024/html/Quan_Psychometry_An_Omnifit_Model_for_Image_Reconstruction_from_Human_Brain_CVPR_2024_paper.html)] [[arXiv](https://arxiv.org/abs/2403.20022)]
+[[CVPR 2024](https://openaccess.thecvf.com/content/CVPR2024/html/Quan_Psychometry_An_Omnifit_Model_for_Image_Reconstruction_from_Human_Brain_CVPR_2024_paper.html)] [[arXiv](https://arxiv.org/abs/2403.20022)] [[Related TPAMI 2026 Early Access](https://doi.org/10.1109/TPAMI.2026.3738650)]
 
 [X-SUBJ] NeuroPictor: Refining fMRI-to-Image Reconstruction via Multi-individual Pretraining and Multi-level Modulation
 [[ECCV 2024](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06746.pdf)] [[arXiv](https://arxiv.org/abs/2403.18211)] [[Project](https://jingyanghuo.github.io/neuropictor/)]
@@ -418,7 +442,27 @@ StableMind: Source-Free Cross-Subject fMRI Decoding with Regularized Adaptation 
 [[arXiv 2026](https://arxiv.org/abs/2605.02586)]
 
 NeurIPS: Neuro-anatomical Inductive Priors for Sphere-based Brain Decoding [ALIGN] [X-SUBJ]
-[[arXiv 2026](https://arxiv.org/abs/2605.24993)]
+[[ICML 2026](https://proceedings.mlr.press/v306/yu26g.html)] [[arXiv](https://arxiv.org/abs/2605.24993)] [[Code](https://github.com/SCUT-Xinlab/NeurIPS)]
+
+Meta-Learning In-Context Enables Training-Free Cross Subject Brain Decoding [ALIGN] [X-SUBJ]
+*(Uses paired examples from the new subject as context without fine-tuning.)*
+[[CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Nan_Meta-Learning_In-Context_Enables_Training-Free_Cross_Subject_Brain_Decoding_CVPR_2026_paper.html)]
+
+Modeling the Brain's Grammar: ROI-Guided fMRI Pretraining for Transferable and Interpretable Vision Decoding [ALIGN] [X-SUBJ]
+[[CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Liu_Modeling_the_Brains_Grammar_ROI-Guided_fMRI_Pretraining_for_Transferable_and_CVPR_2026_paper.html)]
+
+Duala: Dual-Level Alignment of Subjects and Stimuli for Cross-Subject fMRI Decoding [GEN] [ALIGN] [X-SUBJ]
+[[CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Li_Duala_Dual-Level_Alignment_of_Subjects_and_Stimuli_for_Cross-Subject_fMRI_CVPR_2026_paper.html)]
+
+ConnecToMind2: Inter-Subject fMRI Decoding via Whole-Brain Connectome-Guided Alignment [GEN] [ALIGN] [X-SUBJ]
+[[MICCAI 2026](https://papers.miccai.org/miccai-2026/0197-Paper1776.html)]
+
+Reconstructing shared visual experiences from human brain activity across individuals (MindShow) [GEN] [ALIGN] [X-SUBJ]
+*(Adapts a shared visual reconstruction model with a limited amount of target-subject calibration data.)*
+[[Medical Image Analysis 2026](https://doi.org/10.1016/j.media.2026.104157)] [[Code](https://github.com/AI-NMI/MindShow)]
+
+fMRI-based cross-subject visual reconstruction via structural consistency and multi-scale cortical modeling [GEN] [ALIGN] [X-SUBJ]
+[[Information Fusion 2026](https://doi.org/10.1016/j.inffus.2026.104352)]
 
 ---
 
@@ -438,6 +482,15 @@ BrainBits: How Much of the Brain are Generative Reconstruction Methods Using?
 Neuro-Symbolic Decoding of Neural Activity [ALIGN]
 [[ICLR 2026](https://openreview.net/forum?id=alEx0sm74l)]
 
+---
+
+**Visual encoding and bidirectional modeling**
+
+NeuroFlow: Toward Unified Visual Encoding and Decoding from Neural Activity [GEN] [ALIGN]
+[[CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Mai_NeuroFlow_Toward_Unified_Visual_Encoding_and_Decoding_from_Neural_Activity_CVPR_2026_paper.html)]
+
+Rest2Visual: Predicting Visually Evoked fMRI from Resting-State Scans
+[[MICCAI 2026](https://papers.miccai.org/miccai-2026/0888-Paper2424.html)]
 
 ---
 
@@ -465,7 +518,10 @@ TRIBE: TRImodal Brain Encoder for whole-brain fMRI response prediction [ALIGN]
 [[ICLR 2026](https://openreview.net/forum?id=biegtqdqmg)]
 
 MIRAGE: Adaptive Multimodal Gating for Whole-Brain fMRI Encoding [ALIGN]
-[[arXiv 2026](https://arxiv.org/abs/2605.29850)]
+[[NeurIPS 2026 (accepted poster)](https://neurips.cc/virtual/2026/poster/149712)] [[arXiv](https://arxiv.org/abs/2605.29850)]
+
+A topographic video model predicts the spatio-functional organization of the human visual system
+[[Nature Communications 2026](https://doi.org/10.1038/s41467-026-78948-1)]
 
 ---
 
@@ -507,7 +563,16 @@ A Cognitive Process-Inspired Architecture for Subject-Agnostic Brain Visual Deco
 [[ICLR 2026](https://openreview.net/forum?id=H1GLFKk0xE)]
 
 Bridging Brain and Semantics: A Hierarchical Framework for Semantically Enhanced fMRI-to-Video Reconstruction [GEN] [ALIGN]
-[[arXiv 2026](https://arxiv.org/abs/2605.14569)]
+[[CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Wei_Bridging_Brain_and_Semantics_A_Hierarchical_Framework_for_Semantically_Enhanced_CVPR_2026_paper.html)] [[arXiv](https://arxiv.org/abs/2605.14569)]
+
+MindCross: Fast New Subject Adaptation with Limited Data for Cross-subject Video Reconstruction from Brain Signals [GEN] [X-SUBJ]
+[[AAAI 2026](https://ojs.aaai.org/index.php/AAAI/article/view/38814)] [[Code](https://github.com/XuanhaoLiu/MindCross)]
+
+SemVideo: Reconstructs What You Watch from Brain Activity via Hierarchical Semantic Guidance [GEN] [ALIGN]
+[[CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Yang_SemVideo_Reconstructs_What_You_Watch_from_Brain_Activity_via_Hierarchical_CVPR_2026_paper.html)]
+
+CortexVideo: A Semantic-Spatial Dual-Anchor Framework for High-Fidelity fMRI-to-Video Reconstruction [GEN] [ALIGN]
+[[ECCV 2026 (official poster)](https://eccv.ecva.net/virtual/2026/poster/4246)] [[PDF](https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/5081.pdf)]
 
 ---
 
@@ -520,8 +585,8 @@ Bridging Brain and Semantics: A Hierarchical Framework for Semantically Enhanced
 Capturing the musical brain with Lasso: Dynamic decoding of musical features from fMRI data
 [[NeuroImage 2014](https://www.sciencedirect.com/science/article/pii/S1053811913011099)] [[DOI](https://doi.org/10.1016/j.neuroimage.2013.11.017)]
 
-Brain2Music: Reconstructing Music from Human Brain Activity
-[[arXiv 2023](https://arxiv.org/abs/2307.11078)] [[Project](https://google-research.github.io/seanet/brain2music/)]
+Text-to-music generation models capture musical semantic representations in the human brain (Brain2Music) [GEN]
+[[Nature Communications 2026 (online 2025)](https://www.nature.com/articles/s41467-025-66731-7)] [[arXiv](https://arxiv.org/abs/2307.11078)] [[Project](https://google-research.github.io/seanet/brain2music/)]
 
 Reconstructing Music Perception from Brain Activity Using a Prior-Guided Diffusion Model
 [[Scientific Reports 2025](https://www.nature.com/articles/s41598-025-26095-w)]
@@ -531,6 +596,9 @@ R&B - Rhythm and Brain: Cross-Subject Music Decoding from fMRI via Prior-Guided 
 
 Identifying musical pieces from fMRI data using encoding and decoding models
 [[Scientific Reports 2018](https://www.nature.com/articles/s41598-018-20732-3)]
+
+Direct Conditioning of Audio Diffusion Transformers on fMRI Reveals Cortical Contributions to Sound Reconstruction [GEN]
+[[NeurIPS 2026 (accepted poster)](https://neurips.cc/virtual/2026/poster/152995)]
 
 **Bridge entries pending review**
 
@@ -587,6 +655,19 @@ Scaling Vision Transformers for Functional MRI with Flat Maps
 Benchmarking Explanation Methods for Mental State Decoding with Deep Learning Models
 [[NeuroImage 2023](https://doi.org/10.1016/j.neuroimage.2023.120109)] [[Code](https://github.com/athms/xai-brain-decoding-benchmark)]
 
+The representational geometry of cognitive maps under cognitive control
+[[Nature Communications 2026](https://doi.org/10.1038/s41467-026-77621-x)]
+
+Causal role of human hippocampus in relational structure learning and inference
+[[Nature Human Behaviour 2026](https://doi.org/10.1038/s41562-026-02627-w)]
+
+NiCLIP: neuroimaging contrastive language-image pretraining model for predicting text from brain activation images [ALIGN]
+*(Predicts cognitive tasks and concepts from activation maps, with strongest results on group-level maps.)*
+[[Nature Communications 2026](https://doi.org/10.1038/s41467-026-78451-7)]
+
+ASFFNet: Adaptive structural-functional brain connectome fusion for dynamic cognitive inference
+[[Information Fusion 2027 (online by Nov 2026)](https://doi.org/10.1016/j.inffus.2026.104708)]
+
 ---
 
 ## 8. Brain->Clinical / Disease
@@ -607,13 +688,17 @@ GraSTI-ACL: Graph spatial-temporal infomax with adversarial contrastive learning
 Foundation-Model-Boosted Multimodal Learning for fMRI-based Neuropathic Pain Drug Response Prediction [ALIGN]
 [[MICCAI 2025](https://papers.miccai.org/miccai-2025/0349-Paper1399.html)]
 
+Inflated Performance in fMRI-Based ASD Diagnosis: A Reproducibility Study of Data Leakage in Feature Selection Pipelines
+*(Re-evaluates two ABIDE I classification pipelines after correcting feature-selection leakage.)*
+[[MICCAI 2026](https://papers.miccai.org/miccai-2026/0496-Paper5823.html)]
+
 *(See also Section 2.2 for large-scale clinical, psychiatric, developmental, and disease cohorts used as downstream benchmarks.)*
 
 ---
 
 ## 9. Cross-cutting Methods
 
-> **Scope:** Method-first work with clear multi-task, multi-modal, cross-dataset, foundation-model, or cross-subject scope. Task-specific text, image, video, audio, cognition, and clinical papers remain in their primary task section and use tags when needed.
+> **Scope:** Foundation models, methods spanning tasks or modalities, and studies of encoding, brain and model representations, and evaluation. Task-specific applications are listed in their corresponding sections.
 
 ### 9.1 Foundation / Multimodal / Cross-subject
 
@@ -648,10 +733,90 @@ Stochastic Optimal Control for Continuous-Time fMRI Representation Learning [ALI
 [[ICLR 2026](https://openreview.net/forum?id=N51nP3TBwR)]
 
 FlexiBrain: Resolution-Agnostic Voxel-Level Encoding for Native fMRI [ALIGN]
-[[arXiv 2026](https://arxiv.org/abs/2606.11500)]
+[[ECCV 2026 (official poster)](https://eccv.ecva.net/virtual/2026/poster/3953)] [[arXiv](https://arxiv.org/abs/2606.11500)] [[PDF](https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/3829.pdf)]
 
 Omni-fMRI: A Universal Atlas-Free fMRI Foundation Model [ALIGN]
-[[arXiv 2026](https://arxiv.org/abs/2601.23090)]
+[[ICML 2026](https://proceedings.mlr.press/v306/wang26jv.html)] [[arXiv](https://arxiv.org/abs/2601.23090)]
+
+fMRI-LM: Towards a Universal Foundation Model for Language-Aligned fMRI Understanding [ALIGN]
+[[CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026/html/Wei_fMRI-LM_Towards_a_Universal_Foundation_Model_for_Language-Aligned_fMRI_Understanding_CVPR_2026_paper.html)] [[arXiv](https://arxiv.org/abs/2511.21760)]
+
+Mind-Omni: A Unified Multi-Task Framework for Brain-Vision-Language Modeling via Discrete Diffusion [GEN] [ALIGN]
+[[ICML 2026](https://proceedings.mlr.press/v306/lu26d.html)] [[Code](https://github.com/ReedOnePeck/Mind-Omni)]
+
+BrainJanus: A Unified Model for Understanding and Generation across Brain, Vision, and Language [GEN] [ALIGN]
+[[ICML 2026](https://proceedings.mlr.press/v306/wu26cd.html)] [[Code](https://github.com/HaitaoWuTJU/BrainJanus)]
+
+Brain-OF: An Omnifunctional Foundation Model for fMRI, EEG and MEG [ALIGN]
+[[NeurIPS 2026 (accepted poster)](https://neurips.cc/virtual/2026/poster/155505)]
+
+MnemoDyn: Learning Resting State Dynamics from 40K fMRI sequences
+[[ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/24faedc5853648d5857f2cf086a2acac-Abstract-Conference.html)]
+
+A Brain Graph Foundation Model: Pre-Training and Prompt-Tuning across Broad Atlases and Disorders
+[[ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/fdf5965c14708e90eba7f8f77d24ff4c-Abstract-Conference.html)] [[Code](https://github.com/weixinxu666/BrainGFM)]
+
+Brain-DiT: A Universal Multi-state fMRI Foundation Model with Metadata-Conditioned Pretraining
+[[MICCAI 2026](https://papers.miccai.org/miccai-2026/0120-Paper1362.html)]
+
+### 9.2 Encoding, Representational Analysis, and Evaluation
+
+> **Scope:** Stimulus-to-fMRI response prediction, analyses of brain and model representations, and evaluation methods for encoding and decoding. See Sections 4 and 5 for visual and video-specific encoding models.
+
+**Encoding and response prediction**
+
+See Beyond Words: Joint Visual–Language Representations Improve Brain Encoding of Language-Only Stimuli [ALIGN]
+*(Uses visual augmentation to predict fMRI responses to spoken narratives.)*
+[[EMNLP 2026](https://aclanthology.org/2026.emnlp-main.935/)]
+
+Linguistic Properties and Model Scale in Brain Encoding: From Small to Compressed Language Models [ALIGN]
+[[ICML 2026](https://proceedings.mlr.press/v306/oota26a.html)]
+
+RABBiT: Rapidly adaptive BOLD foundation model via brain-tuning for accurate zero-shot and few-shot prediction of speech-elicited responses in the brain [ALIGN] [X-SUBJ]
+[[NeurIPS 2026 (accepted poster)](https://neurips.cc/virtual/2026/poster/148160)]
+
+Learning Sparse Semantic-Cortical Atoms for Multisubject Naturalistic fMRI Encoding [ALIGN] [X-SUBJ]
+[[NeurIPS 2026 (accepted poster)](https://neurips.cc/virtual/2026/poster/151712)]
+
+BrainVista: Modeling Naturalistic Brain Dynamics as Multimodal Next-Token Prediction [GEN]
+[[NeurIPS 2026 (accepted poster)](https://neurips.cc/virtual/2026/poster/153166)]
+
+**Representational analysis and alignment**
+
+The Mind's Transformer: Computational Neuroanatomy of LLM-Brain Alignment [ALIGN]
+[[ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/9e89f068a62f6858c661a8abecf5bb0a-Abstract-Conference.html)] [[Code](https://github.com/cheng-yeh/MindTransformer)]
+
+When Language Models Lose Their Mind: The Consequences of Brain Misalignment [ALIGN]
+[[ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/864b96035c34651e12202f8cd1d5e945-Abstract-Conference.html)]
+
+Beyond representational alignment with brain-guided language models for robust reasoning [ALIGN]
+[[Nature Machine Intelligence 2026](https://www.nature.com/articles/s42256-026-01278-w)]
+
+Platonic Representations in the Human Brain: Unsupervised Recovery of Universal Geometry [ALIGN] [X-SUBJ]
+[[NeurIPS 2026 (accepted poster)](https://neurips.cc/virtual/2026/poster/148860)]
+
+Network geometry shapes the transformation of task representations across the human cortex
+[[Nature Neuroscience 2026](https://doi.org/10.1038/s41593-026-02486-8)]
+
+Prototypes of the Mind: A Unified Framework for Probing the Visual Brain [ALIGN]
+[[NeurIPS 2026 (accepted poster)](https://neurips.cc/virtual/2026/poster/153745)] [[arXiv](https://arxiv.org/abs/2611.15046)]
+
+**Evaluation, reliability, and data splits**
+
+Accuracy of Noise Ceiling Estimators for Brain Scores
+[[NeurIPS 2026 (accepted poster)](https://neurips.cc/virtual/2026/poster/154840)]
+
+Only Brains Align with Brains: Cross-Region Alignment Patterns Expose Limits of Normative Models [ALIGN]
+[[ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b7868dedad7192f83c9efb042da43317-Abstract-Conference.html)]
+
+SEED: Towards More Accurate Semantic Evaluation for Visual Brain Decoding
+[[ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/142254630f1fda045c831ef70b545b4f-Abstract-Conference.html)] [[Code and evaluation data](https://github.com/Concarne2/SEED)]
+
+Multigranular Evaluation for Brain Visual Decoding
+[[AAAI 2026](https://ojs.aaai.org/index.php/AAAI/article/view/38845)] [[Code](https://github.com/weihaox/BASIC)]
+
+Rethinking Cross-Subject Data Splitting for Brain-to-Text Decoding
+[[EMNLP 2025](https://aclanthology.org/2025.emnlp-main.289/)]
 
 ---
 ## 10. Toolboxes / Libraries / Related Lists
