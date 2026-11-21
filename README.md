@@ -16,7 +16,7 @@ If you find this repo helpful, please give it a ⭐ and consider contributing ne
 
 ![A taxonomy of fMRI modeling paradigms](figures/Figure2_fMRI_Modeling_Taxonomy.png)
 
-[High-resolution figures (300 DPI)](figures/README.md) · [Editable PowerPoint source](figures/ppt/fMRI_Figures_Editable.pptx)
+[High-resolution figures (300 DPI)](figures/README.md)
 
 ---
 
