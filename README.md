@@ -496,7 +496,7 @@ Rest2Visual: Predicting Visually Evoked fMRI from Resting-State Scans
 
 ## 5. Brain->Video / Dynamic Scenes
 
-> **Scope:** Decoding and reconstruction of movies, dynamic natural vision, and video-like scene sequences from fMRI. Task-specific video work remains here even when it uses generative or multimodal components.
+> **Scope:** Predicting fMRI responses to dynamic visual stimuli, and decoding or reconstructing movies and other dynamic scenes from fMRI.
 
 ---
 
@@ -779,6 +779,7 @@ Learning Sparse Semantic-Cortical Atoms for Multisubject Naturalistic fMRI Encod
 [[NeurIPS 2026 (accepted poster)](https://neurips.cc/virtual/2026/poster/151712)]
 
 BrainVista: Modeling Naturalistic Brain Dynamics as Multimodal Next-Token Prediction [GEN]
+*(Forecasts future fMRI states from past brain activity and observed stimuli.)*
 [[NeurIPS 2026 (accepted poster)](https://neurips.cc/virtual/2026/poster/153166)]
 
 **Representational analysis and alignment**
