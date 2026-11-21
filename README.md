@@ -4,11 +4,24 @@ A curated list of fMRI-centric **encoding models, decoding frameworks, and repre
 
 If you find this repo helpful, please give it a ⭐ and consider contributing new papers via pull requests.
 
-**Last Update: 2026 Nov. 21**
+**Last Update: 2026 Nov. 22**
+
+## Visual overview
+
+**Figure 1. A unified landscape of fMRI encoding and decoding.** Stimuli, observed brain responses, decoding targets, and representational analysis.
+
+![A unified landscape of fMRI encoding and decoding](figures/Figure1_fMRI_Unified_Landscape.png)
+
+**Figure 2. A taxonomy of fMRI modeling paradigms.** Encoding, decoding, representational analysis, and shared modeling strategies. The categories describe overlapping methodological pathways.
+
+![A taxonomy of fMRI modeling paradigms](figures/Figure2_fMRI_Modeling_Taxonomy.png)
+
+[High-resolution figures (300 DPI)](figures/README.md) · [Editable PowerPoint source](figures/ppt/fMRI_Figures_Editable.pptx)
 
 ---
 
 ## Contents
+- [Visual overview](#visual-overview)
 - [0. Tag legend](#0-tag-legend)
 - [1. Surveys / Reviews / Perspectives](#1-surveys--reviews--perspectives)
   - [1.1 Reviews](#11-reviews)
@@ -226,6 +239,10 @@ Toward a universal decoder of linguistic meaning from brain activation
 
 Semantic reconstruction of continuous language from non-invasive brain recordings
 [[Nature Neuroscience 2023](https://www.nature.com/articles/s41593-023-01304-9)] [[Code](https://github.com/HuthLab/semantic-decoding)] [[Dataset](https://openneuro.org/datasets/ds003020)]
+
+FuzzyStateFormer: A Neuro-Fuzzy State-Aware Framework with Transformer Temporal Encoding for Reliability-Aware Non-Invasive Long-Sequence fMRI Semantic Decoding
+*(Combines overlapping voxel-to-network memberships, temporal Transformer encoding, and teacher-derived decodability proxies for reliability-aware long-sequence semantic reconstruction.)*
+[[IEEE TFS 2026 Early Access](https://ieeexplore.ieee.org/document/11769580/)] [[DOI](https://doi.org/10.1109/TFUZZ.2026.3740149)]
 
 How Many Bytes Can You Take Out Of Brain-To-Text Decoding?
 *(Information-theoretic evaluation and augmentation of fMRI→text decoders)*
